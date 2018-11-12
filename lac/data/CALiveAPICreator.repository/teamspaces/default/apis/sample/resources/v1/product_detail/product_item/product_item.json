@@ -1,0 +1,40 @@
+{
+  "name": "product_item",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "lineitems",
+  "join": "\"product_name\" = [name]",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "quantity_ordered",
+      "alias": "QuantityOrdered",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "part_price",
+      "alias": "PartPrice",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "order_ident",
+      "alias": "FromOrder",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "amount",
+      "alias": "Amount",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

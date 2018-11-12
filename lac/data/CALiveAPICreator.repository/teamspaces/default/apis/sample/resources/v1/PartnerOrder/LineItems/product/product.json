@@ -1,0 +1,22 @@
+{
+  "name": "product",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "products",
+  "join": "\"name\" = [\"product_name\"]",
+  "isCollection": false,
+  "isCombined": true,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "price",
+      "alias": "CurrentPrice",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

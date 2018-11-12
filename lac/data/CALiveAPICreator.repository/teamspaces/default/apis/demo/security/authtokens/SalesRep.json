@@ -1,0 +1,14 @@
+{
+  "name": "SalesRep",
+  "authToken": "SalesRepApiKey",
+  "description": null,
+  "userIdentifier": "sam",
+  "isActive": true,
+  "expiration": null,
+  "logging": "*=FINE",
+  "roles": [
+    "Sales Rep"
+  ],
+  "globals": {
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "formula_placed_date",
+  "entity": "orders",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "placed_date",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": false,
+  "title": "placed_date is today",
+  "comments": "Date functions",
+  "topics": [
+  ]
+}

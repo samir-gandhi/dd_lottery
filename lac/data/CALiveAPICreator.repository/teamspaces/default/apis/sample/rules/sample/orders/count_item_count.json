@@ -1,0 +1,16 @@
+{
+  "name": "count_item_count",
+  "entity": "orders",
+  "isActive": true,
+  "ruleType": "count",
+  "attribute": "item_count",
+  "roleToChildren": "lineitemsList",
+  "qualification": null,
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "item_count = count(lineitemsList)",
+  "comments": "Count as existence check",
+  "topics": [
+    "No Empty Orders"
+  ]
+}

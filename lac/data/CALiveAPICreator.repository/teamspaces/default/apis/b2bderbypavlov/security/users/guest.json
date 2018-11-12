@@ -1,0 +1,15 @@
+{
+  "name": "guest",
+  "fullname": "Guest Account with read-only access",
+  "email": null,
+  "isActive": true,
+  "comments": null,
+  "keyLifetimeSeconds": null,
+  "passwordHash": "L6YLmKAlx6y5w5/tL8lIAaXmTW8A6d3+7D5QKlZOEiaFAoLw6hMGSqjmkHgh5zDssippXuCbdPRcCLaygcF2QA==",
+  "passwordSalt": "84hPzIGoc11S+dLNHOshfeIZqCYL5fS/cN+ixkjX",
+  "roles": [
+    "Read only"
+  ],
+  "globals": {
+  }
+}

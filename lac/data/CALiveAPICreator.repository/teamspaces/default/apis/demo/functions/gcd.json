@@ -1,0 +1,20 @@
+{
+  "name": "gcd",
+  "isActive": true,
+  "comments": "Simple function that takes two parameters and returns the greatest common divisor.\nThis function is not associated with any tables or resources, so it must be called on the API, with a URL that looks like:\n\n.../v1/gcd?n1=256&n2=512",
+  "returnType": "{\n  \"n1\":6,\n  \"n2\":9,\n  \"gcd\":3\n}",
+  "extendedProperties": null,
+  "parameters": {
+    "n1": {
+      "parameterType": "number",
+      "isRequired": true,
+      "comments": "First number"
+    },
+    "n2": {
+      "parameterType": "number",
+      "isRequired": true,
+      "comments": "Second number"
+    }
+  },
+  "functionType": "apiLevel"
+}

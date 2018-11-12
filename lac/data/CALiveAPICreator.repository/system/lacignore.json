@@ -1,0 +1,10 @@
+{
+  "comments": "Server must be stopped before changing this file.\nThis file can be modified as desired.\nOnly ignoreFiles and ignoreDirectories are used.\n",
+  "ignoreFiles": [
+  ],
+  "ignoreDirectories": [
+    "UserFiles",
+    ".git",
+    ".svn"
+  ]
+}

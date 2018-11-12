@@ -1,0 +1,22 @@
+<h2>Normal Message Processing: Listener Posts to <code>ProcessCharges</code></h2>
+
+<p>See the Listener - it simply posts the message content to resource <code>ProcessCharges</code>.</p>
+
+<p>&nbsp;</p>
+
+<h2>Resource <code>ProcessCharges</code> Posts are&nbsp;persisted to <code>MessageAudits</code>, for error processing</h2>
+
+<p>We want to ensure that messages are saved, even if we encounter errors <em>processing</em> them.&nbsp; So:</p>
+
+<ol>
+	<li><code>PersistCharges</code> declares&nbsp;an Extended Property to save Post data into <code>MessageAudits</code> (via resource <code>PersistCharges</code>).
+
+	<ol>
+		<li>The Extended Property is processed by the Request Event<br />
+		&nbsp;</li>
+	</ol>
+	</li>
+	<li>Function <code>RetryPayload</code>&nbsp;provides for subsequent error retry, by resposting the saved data from <code>MessageAudits</code> to <code>PersistCharges</code>.</li>
+</ol>
+
+<p>&nbsp;</p>

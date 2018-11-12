@@ -1,0 +1,22 @@
+{
+  "name": "Customer",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "customer",
+  "join": "\"name\" = [customer_name]",
+  "isCollection": false,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "name",
+      "alias": "Name",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ProcessPayloadOnRequestAltDesign",
+  "eventType": "request",
+  "comments": "Instead of using Extended Properties to persist the payload, this uses data tables.\nThis can make such persistence more dynamic.",
+  "isActive": false
+}

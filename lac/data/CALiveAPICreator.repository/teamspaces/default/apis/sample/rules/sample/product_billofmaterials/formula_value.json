@@ -1,0 +1,15 @@
+{
+  "name": "formula_value",
+  "entity": "product_billofmaterials",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "value",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "value = return row.kit_number_required * row.product.price",
+  "comments": "Reacts to propagated product.price change",
+  "topics": [
+    "Price Rollup"
+  ]
+}

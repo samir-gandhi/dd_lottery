@@ -1,0 +1,32 @@
+{
+  "Disallow free-form filters and sorts": {
+    "dataType": "boolean",
+    "value": true,
+    "defaultValue": false
+  },
+  "Inline Limit Default": {
+    "dataType": "integer",
+    "value": 10000000,
+    "defaultValue": 2000
+  },
+  "Maximum Page Size": {
+    "dataType": "integer",
+    "value": 100000,
+    "defaultValue": 5000
+  },
+  "Page Size Default": {
+    "dataType": "integer",
+    "value": 200,
+    "defaultValue": 20
+  },
+  "Type base URI": {
+    "dataType": "string",
+    "value": "urn:caliveapicreator:model:",
+    "defaultValue": "urn:caliveapicreator:"
+  },
+  "XML Document Root Element Tag Name": {
+    "dataType": "string",
+    "value": "CALiveAPICreatorAdmin",
+    "defaultValue": "root"
+  }
+}

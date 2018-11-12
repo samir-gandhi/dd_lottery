@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "fullname": "Demo User",
+  "email": "apideveloper@user.com",
+  "isActive": true,
+  "comments": null,
+  "keyLifetimeSeconds": 86400,
+  "passwordHash": "rJWlx97bo1yNRQBCuVfmSIIkc++NG9hmy1LndCL9ZgZOcj4AZIVRxHuZzYEFwpu/cVRj1T4IsIuqcobXxTingg==",
+  "passwordSalt": "8ugHd+4QIaKfvVHMCXcp+cpRzRrSvwEKn4x50FX2",
+  "roles": [
+    "Full access"
+  ],
+  "globals": {
+  }
+}

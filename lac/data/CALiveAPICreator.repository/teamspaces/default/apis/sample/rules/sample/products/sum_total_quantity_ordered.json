@@ -1,0 +1,17 @@
+{
+  "name": "sum_total_quantity_ordered",
+  "entity": "products",
+  "isActive": true,
+  "ruleType": "sum",
+  "attribute": "total_quantity_ordered",
+  "roleToChildren": "lineitemsList",
+  "childAttribute": "quantity_ordered",
+  "qualification": "is_ready = true",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "total_quantity_ordered = sum(lineitemsList.quantity_ordered where is_ready = true)",
+  "comments": null,
+  "topics": [
+    "MakeReady"
+  ]
+}

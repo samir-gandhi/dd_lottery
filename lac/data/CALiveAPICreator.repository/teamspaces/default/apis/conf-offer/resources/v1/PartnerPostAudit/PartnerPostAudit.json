@@ -1,0 +1,13 @@
+{
+  "name": "PartnerPostAudit",
+  "description": "Posts data to the ConfOfferAudits table.\n\nPartnerPost has the following Extended Property: { \"PersistTo\": \"PartnerPostAudit\"}\nThis triggers POSTs (audits) to this resource, per the Request Event (AuditRequests).",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "main",
+  "entity": "ConfOfferAudits",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": true
+}

@@ -1,0 +1,19 @@
+{
+  "name": "event_alert_apiXML",
+  "entity": "ConferenceOffers",
+  "isActive": false,
+  "ruleType": "event",
+  "asynchronous": false,
+  "appliesTo": {
+    "insert": true,
+    "update": true,
+    "delete": true
+  },
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Alert Management - XML Message",
+  "comments": "Same as \"Alert Management - JSON Message\", changed to illustrate how to format the request as xml instead of JSON",
+  "topics": [
+    "3. Integration"
+  ]
+}

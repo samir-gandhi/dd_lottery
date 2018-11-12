@@ -1,0 +1,14 @@
+{
+  "name": "formula_Alerts_datetime",
+  "entity": "MessageAudits",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "Alerts_datetime",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": false,
+  "title": "TimeStamp",
+  "comments": null,
+  "topics": [
+  ]
+}

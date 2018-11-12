@@ -1,0 +1,16 @@
+{
+  "name": "validation_creditLimit",
+  "entity": "customers",
+  "isActive": true,
+  "ruleType": "validation",
+  "codeType": "JavaScript",
+  "errorMessage": null,
+  "problemAttributes": [
+  ],
+  "isAutoTitle": true,
+  "title": "Validation: return row.balance <= row.credit_limit",
+  "comments": null,
+  "topics": [
+    "ChkCredit"
+  ]
+}

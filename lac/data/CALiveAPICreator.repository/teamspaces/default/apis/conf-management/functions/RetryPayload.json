@@ -1,0 +1,12 @@
+{
+  "name": "RetryPayload",
+  "isActive": true,
+  "comments": "Initiate error recovery retry, per Rules on MessageAudits.",
+  "returnType": "{\n  \"statusCode\": 201\n}",
+  "extendedProperties": null,
+  "parameters": null,
+  "functionType": "rowLevel",
+  "appliesTo": [
+    "main:MessageAudits"
+  ]
+}

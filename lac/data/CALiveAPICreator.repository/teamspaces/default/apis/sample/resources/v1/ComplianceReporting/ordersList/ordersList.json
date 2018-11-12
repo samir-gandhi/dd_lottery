@@ -1,0 +1,64 @@
+{
+  "name": "ordersList",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "orders",
+  "join": "\"customer_name\" = [name]",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "ident",
+      "alias": "ident",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "amount_total",
+      "alias": "amount_total",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "placed_date",
+      "alias": "placed_date",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "approving_officer",
+      "alias": "approving_officer",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "customer_name",
+      "alias": "customer_name",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "salesrep_name",
+      "alias": "salesrep_name",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "due_date",
+      "alias": "due_date",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "item_count",
+      "alias": "item_count",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

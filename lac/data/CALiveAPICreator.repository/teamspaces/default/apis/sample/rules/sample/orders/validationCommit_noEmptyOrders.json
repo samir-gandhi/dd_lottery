@@ -1,0 +1,16 @@
+{
+  "name": "validationCommit_noEmptyOrders",
+  "entity": "orders",
+  "isActive": true,
+  "ruleType": "commitValidation",
+  "codeType": "JavaScript",
+  "errorMessage": null,
+  "problemAttributes": [
+  ],
+  "isAutoTitle": true,
+  "title": "Validation (Commit): return row.item_count > 0",
+  "comments": "Story: Place Order.  Task: No Empty Orders",
+  "topics": [
+    "No Empty Orders"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "sum_balance",
+  "entity": "customer",
+  "isActive": true,
+  "ruleType": "sum",
+  "attribute": "balance",
+  "roleToChildren": "PurchaseOrderList",
+  "childAttribute": "amount_total",
+  "qualification": "paid = false",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "balance = sum(PurchaseOrderList.amount_total where paid = false)",
+  "comments": "A rule is like a spreadsheet cell formula... it *reacts\" to changes in referenced data...\n* increased when order placed\n* decreased when order deleted... or paid\n* adjusted when order changed... or assigned to a new customer",
+  "topics": [
+    "Check Credit"
+  ]
+}

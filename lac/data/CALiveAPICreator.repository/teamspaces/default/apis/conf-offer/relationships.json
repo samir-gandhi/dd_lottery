@@ -1,0 +1,44 @@
+[
+  {
+    "parentEntity": "ConfManagement:MarketingPrograms",
+    "childEntity": "main:ConferenceOffers",
+    "roleToParent": "MarketingProgram",
+    "roleToChild": "ConferenceOffers_List",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "MarketingProgramName"
+    ]
+  },
+  {
+    "parentEntity": "main:ConferenceOffers",
+    "childEntity": "main:Exhibits",
+    "roleToParent": "ConferenceOffers",
+    "roleToChild": "Exhibits_List",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "ident"
+    ],
+    "childColumns": [
+      "Conferences_ident"
+    ]
+  },
+  {
+    "parentEntity": "main:ConferenceOffers",
+    "childEntity": "main:Talks",
+    "roleToParent": "ConferenceOffers",
+    "roleToChild": "Talks_List",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "ident"
+    ],
+    "childColumns": [
+      "Conferences_ident"
+    ]
+  }
+]

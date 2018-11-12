@@ -1,0 +1,19 @@
+{
+  "name": "ProcessShipperWebHook",
+  "entity": "Orders",
+  "isActive": true,
+  "ruleType": "commitEvent",
+  "asynchronous": false,
+  "appliesTo": {
+    "insert": true,
+    "update": true,
+    "delete": true
+  },
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Process Shipper WebHook",
+  "comments": "If this order shipped by an external Shipper, alert the shipper via their web hook (if any).\n\nThe resource (ShipperAPIDef) defines outgoing message transformations: columns, aliases, related objects.  ConstantsLib.supplierAuth is in B2Blib (API Properties > Libraries)\n\nShipper registers for web hook by self-service access to their OrderChangeWebHook, protected by row-level security to only *their* Shipper record.",
+  "topics": [
+    "Shipper Alert"
+  ]
+}

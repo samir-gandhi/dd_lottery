@@ -1,0 +1,28 @@
+{
+  "name": "Talks_List",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "main",
+  "entity": "Talks",
+  "join": "\"Conferences_ident\" = [\"ident\"]",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": "\"Use\" = true",
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "name",
+      "alias": "name",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "Quantity",
+      "alias": "Quantity",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

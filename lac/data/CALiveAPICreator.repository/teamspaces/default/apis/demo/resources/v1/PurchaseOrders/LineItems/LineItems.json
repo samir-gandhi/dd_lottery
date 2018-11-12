@@ -1,0 +1,14 @@
+{
+  "name": "LineItems",
+  "description": "API example",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "LineItem",
+  "join": "\"order_number\" = [order_number]",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": "\"product_number\" asc",
+  "useSchemaAttributes": true
+}

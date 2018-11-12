@@ -1,0 +1,40 @@
+{
+  "name": "Orders",
+  "description": "API example",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "PurchaseOrder",
+  "join": "\"customer_name\" = [name]",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": "\"order_number\" desc",
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "order_number",
+      "alias": "OrderNumber",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "amount_total",
+      "alias": "TotalAmount",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "paid",
+      "alias": "Paid",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "notes",
+      "alias": "Notes",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

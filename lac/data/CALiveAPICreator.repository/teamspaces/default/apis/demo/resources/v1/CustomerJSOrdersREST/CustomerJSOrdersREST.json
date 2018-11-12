@@ -1,0 +1,27 @@
+{
+  "name": "CustomerJSOrdersREST",
+  "description": "RESTful Orders from a REST call\nMake a SQL Call for each customer and then make a REST call to another REST Endpoint to create a compound document resource.",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "customer",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "balance",
+      "alias": "balance",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "name",
+      "alias": "name",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

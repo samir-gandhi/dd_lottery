@@ -1,0 +1,1868 @@
+{
+  "name": "demo",
+  "prefix": "demo",
+  "title": "Demo",
+  "databaseType": "DERBY",
+  "comments": null,
+  "isActive": true,
+  "isLogErrors": false,
+  "isSchemaEditable": false,
+  "isSupportBoolean": false,
+  "isReadOnly": false,
+  "useJNDIDataSource": false,
+  "url": "jdbc:derby:Demo",
+  "catalog": null,
+  "schema": "DEMO",
+  "username": "DEMO",
+  "encryptedPassword": "2:gRlbLj99J+oyhrIDWdDva6CLYmWgX0P7hPcmRNhSCctMuWA3KxlU9A==",
+  "encryptedPasswordSalt": "3mhWasFkboaYUxrJYSE3SY80WKcHYDMj8eYTX0j8",
+  "maximumConnections": 20,
+  "tableExcludes": null,
+  "tableIncludes": null,
+  "procedureExcludes": null,
+  "procedureIncludes": null,
+  "nonPersistentAttributes": {
+  },
+  "tableInfos": {
+  },
+  "viewInfos": {
+  },
+  "procedureInfos": {
+  },
+  "schemaCache": {
+    "serializedSchemaVersion": "Product @@logicServiceFullVersion@@ Serialized MetaSchema 49",
+    "prefix": "demo",
+    "catalog": null,
+    "schema": "DEMO",
+    "sqlStrategy": {
+      "sqlStrategyClassName": "com.kahuna.server.db.derby.SqlStrategyDerby",
+      "isAdmin": false,
+      "supportBoolean": false,
+      "databaseProductName": "Apache Derby",
+      "databaseProductVersion": "10.14.1.0 - (1808820)"
+    },
+    "metaHolder": {
+      "baseTypes": [
+      ],
+      "tables": [
+        {
+          "entity": "product",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "product_number",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": true,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": true,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "name",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(50)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(50)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 50,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "price",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            },
+            {
+              "name": "icon",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BLOB",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.BinaryType",
+                "dbTypeName": "BLOB",
+                "jdbcSqlType": 2004,
+                "genericType": "binary",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 2147483647,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "full_image",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BLOB",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.BinaryType",
+                "dbTypeName": "BLOB",
+                "jdbcSqlType": 2004,
+                "genericType": "binary",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 2147483647,
+                "isFixedLength": false
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "SQL181106013424570",
+              "isDatabasePrimary": true,
+              "columns": [
+                "product_number"
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "LineItem",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "lineitem_id",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": true,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": true,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "product_number",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "order_number",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "qty_ordered",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "INT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "INT",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            },
+            {
+              "name": "product_price",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            },
+            {
+              "name": "amount",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "SQL181106013424450",
+              "isDatabasePrimary": true,
+              "columns": [
+                "lineitem_id"
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "PurchaseOrder",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "order_number",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": true,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": true,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "amount_total",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            },
+            {
+              "name": "paid",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": true,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BOOLEAN",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.BooleanType",
+                "dbTypeName": "BOOLEAN",
+                "jdbcSqlType": 16,
+                "genericType": "boolean",
+                "isDistinctType": false,
+                "isUserDefinedType": false
+              }
+            },
+            {
+              "name": "notes",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(1000)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(1000)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 1000,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "customer_name",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(50)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(50)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 50,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "salesrep_id",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "SQL181106013425020",
+              "isDatabasePrimary": true,
+              "columns": [
+                "order_number"
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "purchaseorder_audit",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "audit_number",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": true,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": true,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "order_number",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "amount_total",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            },
+            {
+              "name": "paid",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BOOLEAN",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.BooleanType",
+                "dbTypeName": "BOOLEAN",
+                "jdbcSqlType": 16,
+                "genericType": "boolean",
+                "isDistinctType": false,
+                "isUserDefinedType": false
+              }
+            },
+            {
+              "name": "notes",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(1000)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(1000)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 1000,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "audit_time",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": true,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "TIMESTAMP",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.TimestampOffsetType",
+                "dbTypeName": "TIMESTAMP",
+                "jdbcSqlType": 93,
+                "genericType": "timestamp with time zone",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 9
+              }
+            },
+            {
+              "name": "customer_name",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(50)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(50)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 50,
+                "isFixedLength": false
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "SQL181106013424780",
+              "isDatabasePrimary": true,
+              "columns": [
+                "audit_number"
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "employee",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "employee_id",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": true,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": true,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "login",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(15)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(15)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 15,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "name",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(30)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(30)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 30,
+                "isFixedLength": false
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "SQL181106013424240",
+              "isDatabasePrimary": true,
+              "columns": [
+                "employee_id"
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "employee_picture",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "employee_id",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "icon",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BLOB",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.BinaryType",
+                "dbTypeName": "BLOB",
+                "jdbcSqlType": 2004,
+                "genericType": "binary",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 2147483647,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "picture",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BLOB",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.BinaryType",
+                "dbTypeName": "BLOB",
+                "jdbcSqlType": 2004,
+                "genericType": "binary",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 2147483647,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "voice",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BLOB",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.BinaryType",
+                "dbTypeName": "BLOB",
+                "jdbcSqlType": 2004,
+                "genericType": "binary",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 2147483647,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "resume",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "CLOB",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "CLOB",
+                "jdbcSqlType": 2005,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 2147483647,
+                "isFixedLength": false
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "SQL181106013423940",
+              "isDatabasePrimary": true,
+              "columns": [
+                "employee_id"
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "customer",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "name",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(50)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(50)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 50,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "balance",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            },
+            {
+              "name": "credit_limit",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            },
+            {
+              "name": "comments",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(200)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(200)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 200,
+                "isFixedLength": false
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "SQL181106013423460",
+              "isDatabasePrimary": true,
+              "columns": [
+                "name"
+              ]
+            }
+          ]
+        }
+      ],
+      "views": [
+        {
+          "entity": "employee_with_picture",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "employee_id",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "login",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(15)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(15)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 15,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "picture",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BLOB",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.BinaryType",
+                "dbTypeName": "BLOB",
+                "jdbcSqlType": 2004,
+                "genericType": "binary",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 2147483647,
+                "isFixedLength": false
+              }
+            }
+          ],
+          "keys": [
+          ],
+          "viewDefinition": null,
+          "isUpdatable": false,
+          "checkOption": null
+        },
+        {
+          "entity": "customers_owing",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "name",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(50)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(50)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 50,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "balance",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            },
+            {
+              "name": "credit_limit",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            }
+          ],
+          "keys": [
+          ],
+          "viewDefinition": null,
+          "isUpdatable": false,
+          "checkOption": null
+        },
+        {
+          "entity": "LineItemJoinProduct",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "LineItemId",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "ProductNumber",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "OrderNumber",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "QuantityOrdered",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "INT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "INT",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            },
+            {
+              "name": "ProductPriceCopy",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            },
+            {
+              "name": "ProductPrice",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            },
+            {
+              "name": "ProductName",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(50)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(50)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 50,
+                "isFixedLength": false
+              }
+            }
+          ],
+          "keys": [
+          ],
+          "viewDefinition": null,
+          "isUpdatable": false,
+          "checkOption": null
+        },
+        {
+          "entity": "v_LineItem",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "LineItemId",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "ProductNumber",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "OrderNumber",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "BIGINT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "BIGINT",
+                "jdbcSqlType": -5,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 8
+              }
+            },
+            {
+              "name": "QuantityOrdered",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "INT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "INT",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            },
+            {
+              "name": "ProductPrice",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DECIMAL(19,4)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DecimalNumberType",
+                "dbTypeName": "DECIMAL(19,4)",
+                "jdbcSqlType": 3,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 19,
+                "scale": 4,
+                "permitNonFinite": false
+              }
+            }
+          ],
+          "keys": [
+          ],
+          "viewDefinition": null,
+          "isUpdatable": false,
+          "checkOption": null
+        }
+      ],
+      "procedures": [
+        {
+          "entity": "get_employee",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": "com.kahuna.server.db.derby.DerbySample.getEmployeeProcedure",
+          "namespace": null,
+          "version": null,
+          "isFunction": false,
+          "args": [
+            {
+              "name": "GIVEN_EMPLOYEE_ID",
+              "direction": "IN",
+              "jdbcSqlType": 4,
+              "argPosition": 1
+            },
+            {
+              "name": "PLUS_ONE",
+              "direction": "IN_OUT",
+              "jdbcSqlType": 4,
+              "argPosition": 2
+            }
+          ]
+        },
+        {
+          "entity": "REVERSE",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": "com.kahuna.server.db.derby.DerbySample.reverse",
+          "namespace": null,
+          "version": null,
+          "isFunction": true,
+          "args": [
+            {
+              "name": "FUNCTION_RETURN_VALUE",
+              "direction": "OUT",
+              "jdbcSqlType": 12,
+              "argPosition": 0
+            },
+            {
+              "name": "SOME_VALUE",
+              "direction": "IN",
+              "jdbcSqlType": 12,
+              "argPosition": 1
+            }
+          ]
+        }
+      ],
+      "sequences": [
+      ],
+      "foreignKeys": [
+        {
+          "entity": "lineitem_purchaseorder",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "updateRule": "NO_ACTION",
+          "deleteRule": "CASCADE",
+          "parent": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "PurchaseOrder"
+          },
+          "child": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "LineItem"
+          },
+          "columns": [
+            {
+              "parent": "order_number",
+              "child": "order_number"
+            }
+          ]
+        },
+        {
+          "entity": "product",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "updateRule": "NO_ACTION",
+          "deleteRule": "NO_ACTION",
+          "parent": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "product"
+          },
+          "child": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "LineItem"
+          },
+          "columns": [
+            {
+              "parent": "product_number",
+              "child": "product_number"
+            }
+          ]
+        },
+        {
+          "entity": "salesrep",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "updateRule": "NO_ACTION",
+          "deleteRule": "CASCADE",
+          "parent": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "employee"
+          },
+          "child": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "PurchaseOrder"
+          },
+          "columns": [
+            {
+              "parent": "employee_id",
+              "child": "salesrep_id"
+            }
+          ]
+        },
+        {
+          "entity": "purchaseorder_audit",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "updateRule": "NO_ACTION",
+          "deleteRule": "CASCADE",
+          "parent": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "PurchaseOrder"
+          },
+          "child": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "purchaseorder_audit"
+          },
+          "columns": [
+            {
+              "parent": "order_number",
+              "child": "order_number"
+            }
+          ]
+        },
+        {
+          "entity": "employee_picture",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "updateRule": "NO_ACTION",
+          "deleteRule": "CASCADE",
+          "parent": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "employee"
+          },
+          "child": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "employee_picture"
+          },
+          "columns": [
+            {
+              "parent": "employee_id",
+              "child": "employee_id"
+            }
+          ]
+        },
+        {
+          "entity": "customer",
+          "catalog": null,
+          "schema": "DEMO",
+          "remarks": null,
+          "updateRule": "NO_ACTION",
+          "deleteRule": "CASCADE",
+          "parent": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "customer"
+          },
+          "child": {
+            "catalog": null,
+            "schema": "DEMO",
+            "object": "PurchaseOrder"
+          },
+          "columns": [
+            {
+              "parent": "name",
+              "child": "customer_name"
+            }
+          ]
+        }
+      ]
+    },
+    "tableViewFilteredCount": 0,
+    "procedureFilteredCount": 0,
+    "supportBoolean": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "PurchaseOrdersFreeSQL",
+  "description": "Using FreeSQL - you can create complex sql statements. This is a group by find sales reps with large quantity (>20) lineitem sales.",
+  "siblingRank": 100,
+  "resourceType": "FreeSQL",
+  "prefix": "demo",
+  "isCollection": true
+}

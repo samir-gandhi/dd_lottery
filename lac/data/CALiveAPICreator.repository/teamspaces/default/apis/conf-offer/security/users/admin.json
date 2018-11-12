@@ -1,0 +1,15 @@
+{
+  "name": "admin",
+  "fullname": "Admin user",
+  "email": "apideveloper@user.com",
+  "isActive": true,
+  "comments": null,
+  "keyLifetimeSeconds": 86400,
+  "passwordHash": "Fq39iKN8y4IXVX27BouBN99THwHnNe0T6OhuVIx5RsR2+rJLMKRaosrgDZjrxuWcvTsQwHCouQzPzk+PEyzt1Q==",
+  "passwordSalt": "V4BBfKZWxFpG2skqqMs3uB8DK/K5bb61reuNUc0s",
+  "roles": [
+    "Full access"
+  ],
+  "globals": {
+  }
+}

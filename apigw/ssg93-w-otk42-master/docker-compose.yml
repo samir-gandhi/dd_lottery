@@ -26,10 +26,13 @@ services:
       SSG_ADMIN_PASSWORD: "7layer"
       ACCEPT_LICENSE: "true"
 #      SSG_JVM_HEAP: "4g"
-      EXTRA_JAVA_ARGS: "-XX:ParallelGCThreads=4 -Dcom.l7tech.bootstrap.env.license.enable=false -Dcom.l7tech.bootstrap.autoTrustSslKey=trustAnchor,TrustedFor.SSL,TrustedFor.SAML_ISSUER"
+      EXTRA_JAVA_ARGS: "-XX:ParallelGCThreads=4 -Dcom.l7tech.bootstrap.env.license.enable=false- -javaagent:/opt/SecureSpan/Gateway/node/default/etc/dd-java-agent.jar -Ddd.service.name=gateway -Ddd.agent.host=172.17.0.1 -Ddd.agent.port=8126 -Dcom.l7tech.bootstrap.autoTrustSslKey=trustAnchor,TrustedFor.SSL,TrustedFor.SAML_ISSUER"
     volumes:
       - /opt/SecureSpan/Gateway/node/default/etc/bootstrap/services/restman
       - ./config/SSG_LICENSE.xml:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/license.xml
+      - ./config/dd-java-agent.jar:/opt/SecureSpan/Gateway/node/default/etc/dd-java-agent.jar
+    #network_mode: bridge
+      
       
   mysql-ssg:
     image: mysql:5.7
@@ -47,10 +50,13 @@ services:
     volumes:
       - ./data/mysql-ssg/conf:/etc/mysql/conf.d
       - ./data/mysql-ssg/data:/var/lib/mysql
+    #network_mode: bridge
       
   mysql-otk:
     image: mysql:5.7
     mem_limit: 512m
+    ports:
+      - "8307:3306"
     environment:
       MYSQL_ROOT_PASSWORD: "7layer"
       MYSQL_DATABASE: "otk_db"
@@ -65,3 +71,4 @@ services:
       - ./data/mysql-otk/conf:/etc/mysql/conf.d
       - ./data/mysql-otk/data:/var/lib/mysql
       - ./add-ons/OTK_Installers/Database_scripts/mysql:/docker-entrypoint-initdb.d 
+    #network_mode: bridge

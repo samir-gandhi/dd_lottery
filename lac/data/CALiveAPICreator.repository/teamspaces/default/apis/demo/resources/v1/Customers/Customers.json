@@ -1,0 +1,33 @@
+{
+  "name": "Customers",
+  "description": "API example - illustrates attribute aliasing / projection",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "customer",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "name",
+      "alias": "Name",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "balance",
+      "alias": "Balance",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "credit_limit",
+      "alias": "CreditLimit",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

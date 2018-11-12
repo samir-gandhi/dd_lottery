@@ -1,0 +1,15 @@
+{
+  "name": "formula_budget_with_sub_department_budget",
+  "entity": "departments",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "budget_with_sub_department_budget",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "budget_with_sub_department_budget = return row.budget + row.sum_sub_department_budget",
+  "comments": "Recursive Rollup",
+  "topics": [
+    "Budget Rollup"
+  ]
+}

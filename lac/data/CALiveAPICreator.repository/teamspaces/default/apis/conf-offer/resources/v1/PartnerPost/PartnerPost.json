@@ -1,0 +1,21 @@
+{
+  "name": "PartnerPost",
+  "description": "Partners post to this endpoint - the request data represents offers for conference participation. \nThis maps incoming requests (note Cost aliased as Price on ExhibitsList) into table rows, and saves these rows onto underlying tables ConferenceOffers, Exhibits and Talks (running any relevant rules).\n\nPosted request data is audited to PartnerPostAudit, per Extended Properties (see tab, above), and Request Event (AuditRequests).",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "main",
+  "entity": "ConferenceOffers",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "name",
+      "alias": "name",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

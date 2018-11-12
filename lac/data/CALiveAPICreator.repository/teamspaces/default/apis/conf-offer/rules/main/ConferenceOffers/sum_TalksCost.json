@@ -1,0 +1,17 @@
+{
+  "name": "sum_TalksCost",
+  "entity": "ConferenceOffers",
+  "isActive": true,
+  "ruleType": "sum",
+  "attribute": "TalksCost",
+  "roleToChildren": "Talks_List",
+  "childAttribute": "Amount",
+  "qualification": "Use = true",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "TalksCost = sum(Talks_List.Amount where Use = true)",
+  "comments": null,
+  "topics": [
+    "2. Logic"
+  ]
+}

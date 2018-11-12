@@ -1,0 +1,5 @@
+{
+  "name": "Salary Audit",
+  "color": "#5ce8a6",
+  "summary": "Create Audit rows when employee salaries change."
+}

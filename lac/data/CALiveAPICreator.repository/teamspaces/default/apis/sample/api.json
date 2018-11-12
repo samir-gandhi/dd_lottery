@@ -1,0 +1,7 @@
+{
+  "name": "Sample",
+  "urlFragment": "sample",
+  "comments": "Complex examples, per Logic Tutorial.  See Topic Descriptions for doc links.",
+  "isEnabled": true,
+  "authProviderName": "Built-in authentication"
+}

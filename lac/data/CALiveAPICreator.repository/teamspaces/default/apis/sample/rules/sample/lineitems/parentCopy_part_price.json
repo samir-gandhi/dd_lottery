@@ -1,0 +1,15 @@
+{
+  "name": "parentCopy_part_price",
+  "entity": "lineitems",
+  "isActive": true,
+  "ruleType": "parentCopy",
+  "attribute": "part_price",
+  "roleToParent": "product",
+  "parentAttribute": "price",
+  "isAutoTitle": true,
+  "title": "part_price = parentcopy(product.price)",
+  "comments": "Does not propagate product price changes",
+  "topics": [
+    "ChkCredit"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Price Rollup",
+  "color": "#b4fdf6",
+  "summary": "Story: Change Product Price. Task: Compute Kit Prices when Component Price changes."
+}

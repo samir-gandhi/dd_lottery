@@ -1,0 +1,14 @@
+{
+  "name": "Product",
+  "description": "Product for LineItem",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "product",
+  "join": "\"product_number\" = [product_number]",
+  "isCollection": false,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": true
+}

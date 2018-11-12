@@ -1,0 +1,15 @@
+{
+  "name": "admin",
+  "fullname": "Demo user (admin)",
+  "email": "new@user.com",
+  "isActive": true,
+  "comments": null,
+  "keyLifetimeSeconds": null,
+  "passwordHash": "RkSWZ+pk2H99G6unDwpppgWaGSnkDEg4Rk8YXoCAPKJoE2A+TuZHhMLiWuX3KWqS4X8LhXmT01hreTwvnmsxCQ==",
+  "passwordSalt": "QqWqsN0deDu7lV/iraIw/Tpu7cFyj9kD+MrqnmU2",
+  "roles": [
+    "System administrator"
+  ],
+  "globals": {
+  }
+}

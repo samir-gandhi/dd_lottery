@@ -1,0 +1,17 @@
+{
+  "name": "sum_ExhibitsCost",
+  "entity": "ConferenceOffers",
+  "isActive": true,
+  "ruleType": "sum",
+  "attribute": "ExhibitsCost",
+  "roleToChildren": "Exhibits_List",
+  "childAttribute": "Amount",
+  "qualification": "Use = true",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "ExhibitsCost = sum(Exhibits_List.Amount where Use = true)",
+  "comments": null,
+  "topics": [
+    "2. Logic"
+  ]
+}

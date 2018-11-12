@@ -1,0 +1,300 @@
+[
+  {
+    "parentEntity": "sample:customers",
+    "childEntity": "sample:orders",
+    "roleToParent": "customer",
+    "roleToChild": "ordersList",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "customer_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:customers",
+    "childEntity": "sample:payments",
+    "roleToParent": "paymentCustomer",
+    "roleToChild": "paymentsList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "customer_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:departments",
+    "childEntity": "sample:departments",
+    "roleToParent": "headDepartment",
+    "roleToChild": "departmentsList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "head_department_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:departments",
+    "childEntity": "sample:employees",
+    "roleToParent": "reportsTo",
+    "roleToChild": "reportingEmployees",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "department_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:departments",
+    "childEntity": "sample:employees",
+    "roleToParent": "onLoanTo",
+    "roleToChild": "onLoanEmployees",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "on_loan_department_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:employees",
+    "childEntity": "sample:departments",
+    "roleToParent": "manager",
+    "roleToChild": "departmentsList",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "managed_by"
+    ]
+  },
+  {
+    "parentEntity": "sample:employees",
+    "childEntity": "sample:employee_audits",
+    "roleToParent": "auditedEmployee",
+    "roleToChild": "employee_auditsList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "employee_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:employees",
+    "childEntity": "sample:employee_raise_service",
+    "roleToParent": "employeeForRaise",
+    "roleToChild": "employee_raise_serviceList",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "employee_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:employees",
+    "childEntity": "sample:empsales",
+    "roleToParent": "empSalesEmployee",
+    "roleToChild": "empsalesList",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "employee_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:employees",
+    "childEntity": "sample:orders",
+    "roleToParent": "salesRep",
+    "roleToChild": "ordersList",
+    "deleteRule": "Set NULL",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "salesrep_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:empsales",
+    "childEntity": "sample:orders",
+    "roleToParent": "empSales",
+    "roleToChild": "ordersList",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "employee_name",
+      "month",
+      "year"
+    ],
+    "childColumns": [
+      "salesrep_name",
+      "empsales_month",
+      "empsales_year"
+    ]
+  },
+  {
+    "parentEntity": "sample:lineitems",
+    "childEntity": "sample:lineitems",
+    "roleToParent": "kitItem",
+    "roleToChild": "lineitemsList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "ident"
+    ],
+    "childColumns": [
+      "kit_item_ident"
+    ]
+  },
+  {
+    "parentEntity": "sample:lineitems",
+    "childEntity": "sample:lineitem_notes",
+    "roleToParent": "itemForNote",
+    "roleToChild": "lineitem_notesList",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "ident"
+    ],
+    "childColumns": [
+      "item_ident"
+    ]
+  },
+  {
+    "parentEntity": "sample:lineitems",
+    "childEntity": "sample:lineitem_usages",
+    "roleToParent": "itemForUsage",
+    "roleToChild": "lineitem_usagesList",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "ident"
+    ],
+    "childColumns": [
+      "item_ident"
+    ]
+  },
+  {
+    "parentEntity": "sample:orders",
+    "childEntity": "sample:lineitems",
+    "roleToParent": "itemOrder",
+    "roleToChild": "lineitemsList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "ident"
+    ],
+    "childColumns": [
+      "order_ident"
+    ]
+  },
+  {
+    "parentEntity": "sample:orders",
+    "childEntity": "sample:lineitem_usages",
+    "roleToParent": "orderForUsage",
+    "roleToChild": "lineitem_usagesList",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "ident"
+    ],
+    "childColumns": [
+      "order_ident"
+    ]
+  },
+  {
+    "parentEntity": "sample:orders",
+    "childEntity": "sample:payment_order_allocations",
+    "roleToParent": "allocationOrder",
+    "roleToChild": "payment_order_allocationsList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "ident"
+    ],
+    "childColumns": [
+      "order_ident"
+    ]
+  },
+  {
+    "parentEntity": "sample:payments",
+    "childEntity": "sample:payment_order_allocations",
+    "roleToParent": "payment",
+    "roleToChild": "payment_order_allocationsList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "ident"
+    ],
+    "childColumns": [
+      "payment_ident"
+    ]
+  },
+  {
+    "parentEntity": "sample:products",
+    "childEntity": "sample:lineitems",
+    "roleToParent": "product",
+    "roleToChild": "lineitemsList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "product_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:products",
+    "childEntity": "sample:product_billofmaterials",
+    "roleToParent": "product",
+    "roleToChild": "inKits",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "product_name"
+    ]
+  },
+  {
+    "parentEntity": "sample:products",
+    "childEntity": "sample:product_billofmaterials",
+    "roleToParent": "kit",
+    "roleToChild": "components",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "product_name_kit"
+    ]
+  }
+]

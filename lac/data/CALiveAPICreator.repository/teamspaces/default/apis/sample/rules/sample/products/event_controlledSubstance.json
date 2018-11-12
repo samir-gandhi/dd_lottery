@@ -1,0 +1,19 @@
+{
+  "name": "event_controlledSubstance",
+  "entity": "products",
+  "isActive": true,
+  "ruleType": "event",
+  "asynchronous": false,
+  "appliesTo": {
+    "insert": true,
+    "update": true,
+    "delete": true
+  },
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Controlled Substance Reporting",
+  "comments": "ControlledSubstanceReporting - report accounts ordering Dynamite; MakeOrderReady",
+  "topics": [
+    "Regulatory Compliance"
+  ]
+}

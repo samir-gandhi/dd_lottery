@@ -1,0 +1,14 @@
+{
+  "name": "SampleOrders_List",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "orders",
+  "join": "\"customer_name\" = [\"name\"]",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": true
+}

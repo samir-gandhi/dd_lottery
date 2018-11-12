@@ -1,0 +1,18 @@
+{
+  "name": "Temp AuthToken for admin [2018-11-12 03:30:11.865]",
+  "authToken": "0f57ac7a86f07e62140e4bbf574fbc7f",
+  "description": null,
+  "userIdentifier": "admin",
+  "isActive": true,
+  "expiration": "2018-11-13T03:30:11.87+00:00",
+  "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+  "isCreatedByAuthenticationService": true,
+  "roles": [
+    "Account admin",
+    "Data admin"
+  ],
+  "globals": {
+    "teamSpaceUrlFragment": "default",
+    "username": "admin"
+  }
+}

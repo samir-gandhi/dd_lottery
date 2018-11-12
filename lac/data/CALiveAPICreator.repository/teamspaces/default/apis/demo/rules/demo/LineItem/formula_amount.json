@@ -1,0 +1,15 @@
+{
+  "name": "formula_amount",
+  "entity": "LineItem",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "amount",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": false,
+  "title": "Discounted price*qty",
+  "comments": "Reactive Logic is expressed in JavaScript, so you use...\n- conditional logic (as above),\n- standard JavaScript services (e.g., moment date functions - enable in Project > Libraries),\n- SQL / external services.... whatever is required.",
+  "topics": [
+    "Check Credit"
+  ]
+}

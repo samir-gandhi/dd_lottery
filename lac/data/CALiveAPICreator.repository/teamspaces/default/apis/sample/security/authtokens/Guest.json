@@ -1,0 +1,14 @@
+{
+  "name": "Guest",
+  "authToken": "GuestKey",
+  "description": null,
+  "userIdentifier": null,
+  "isActive": true,
+  "expiration": null,
+  "logging": "admini=OFF,buslog=OFF,depend=OFF,generl=OFF,persis=FINE,engine=FINE,resrcs=OFF,securi=OFF,sysdbg=OFF,ulogic=OFF",
+  "roles": [
+    "Guest"
+  ],
+  "globals": {
+  }
+}

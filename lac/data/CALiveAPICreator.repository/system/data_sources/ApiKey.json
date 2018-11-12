@@ -1,0 +1,33 @@
+{
+  "name": "ApiKey",
+  "prefix": "apikey",
+  "title": "API Creator ApiKey persistence",
+  "databaseType": "DERBY",
+  "comments": "When enabled, persistent ApiKeys are stored here.  The name 'ApiKey' and the prefix 'apikey' are specific, required values.",
+  "isActive": true,
+  "isLogErrors": false,
+  "isSchemaEditable": false,
+  "isSupportBoolean": true,
+  "isReadOnly": false,
+  "useJNDIDataSource": false,
+  "url": "jdbc:derby:memory:AdminDB",
+  "catalog": null,
+  "schema": "\"LACApiKey\"",
+  "username": "\"LACApiKey\"",
+  "encryptedPassword": "2:L3KmnVm8ewz4YGpdn1ndoWWWDyTPnX/pUThVr76wls3uvernIV8w7g==",
+  "encryptedPasswordSalt": "Fqz+wGd2d6IehyMTACPdHecsd4whMUSE38bekdtB",
+  "maximumConnections": 20,
+  "tableExcludes": null,
+  "tableIncludes": null,
+  "procedureExcludes": null,
+  "procedureIncludes": null,
+  "nonPersistentAttributes": {
+  },
+  "tableInfos": {
+  },
+  "viewInfos": {
+  },
+  "procedureInfos": {
+  },
+  "schemaCacheCompressed": "0x1f8b0800000000000000ed9b5b73da3a1080dff32b3c3cb5338907082721e729049a53a6b94de1e4a593616479316a7cab24a7a19dfcf7ae840d062b8599245077fc06bbabd56ab55f64e4cdcf3dcbaa09e08cf8ec07b8033a8180dc02172c0a6bff5ab51b1eb90995d6e9a91f798c0e803f300ae789efa746a7a7d6603edcba0449663eacd6496d5f398f398cd9a3f24562760fd399941249d0238a43f4a545428f5386179d6e27669f325bf1cd1f484e247853d4fe44d1b2b0eb1321ae48006a2c8d02fb9e4c9290d8b8ac07e0b6ebd82e70676a0f16437a4aa0bda32b263a6ec0d472254f20158a248e232ecfa2c807b2a273317887084893934ddd89092ec15af2bd629acb6ca36e375a76c3ae5b07d6bb46bbde6e37ebef6b38ea492f3ac04c7e8c7c8c7cb166e568388d41a0e88b16dda5d3e0247e4e6ca523b40e42c9e474b101228d4d2b8bfb902a9edb8d54cd51c9ef45711c8dfc2408f3a12c87a38dc23463ccc5e0726e7feb5a2bbfba0ec57d54594083fa8a5660111ac4ca8f4a10aac6c4175050073da02c207e8f794c0a83070f425095e3e60ad1101d4964d40f29ae40ad2b5f337313261635600a8689f38803f3429570b3890b6392f8188c79062c3918b2004b0e1795ce74d06cb48e5bedc3a3567bd5dae9ea1d4b336a5854567559999ff5ffeb5f0d57778d89ff91b71eb21e829b3a33059f799b57754e477f0fb24242f16427aeb4fb216e0327fe551238c0b5c7fd557faeb336ee42491dfc5330d09bcf686aa0ca05672cfa61a2c784642195cf2f7ff344cdeaf26c2a35d6ed25dd53eedbd3fe7acc08a55112ca51c2fd91966d93384385be1d7066a25e9538a3fe8d91bbed7cee7eec7c7e77d87cbf6bee703f58e86dc2dbf34117aaaad15c079dd0d36e01ba803c5e40e8c9095a1c16c3c262618fe0ce4db49317c119f3e82bd00aced2c3d9a8d74b48a721eab2e089a16f81cfad33b9dd47d40aca0acaf241e982a09cc552154e755e2ea7ba2c6836eba564d3147659e054b16f81cedc455f4e5b1d9a6521b3d16c97104c43d465e11243df02964c8c0895eca17a9c7d1199bbb872bdbebef8d0b9da3593e9cb908d2e5b8d1117793c5ac7a393be807975205f84123cc60ccbb27afc2cdf2137ec5f7e180c3b9737bba6492d524812c4d7e3b100b90955cfc55e28ad93c3755cc96c76eb3b93134b7db57e44a12184573ff9e2dcce9ebc08433ff2bce2695d31f8a73398fb2d55c2074d43d46579d06c6ee5f75f82918df4bb7d36668557a5159e65c1b3ba3cfd3b2f4f31b715932b39fed399ec5e5c9f95874543b4853ac2b3686dafcd6e283c3a3e3e6e1a7e9abec9950c56ae2af291331d61294f4662d66259ddd1aca6bebaa3a9ee68e69f37608b47aa25b63ae796f4d539579d73af7dcecd3fdf2d3cd574a3f9464de0379f46c5c6f46cf5f3f67944884fcd8c995bce671e7483f992f4ce1cfa5e5e92b5d53f30f85e6cb68f7944c14db8a10f5fc0b704426ad08ce7e0e5747b59b7bfeedfbfc5d9ce19b2c7c1edaa86ddec8fc56246b3daf8bf0a7b4fbf0060aaa8acdc310000"
+}

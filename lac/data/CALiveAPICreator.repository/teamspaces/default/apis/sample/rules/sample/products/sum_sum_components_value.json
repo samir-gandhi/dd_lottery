@@ -1,0 +1,17 @@
+{
+  "name": "sum_sum_components_value",
+  "entity": "products",
+  "isActive": true,
+  "ruleType": "sum",
+  "attribute": "sum_components_value",
+  "roleToChildren": "components",
+  "childAttribute": "value",
+  "qualification": null,
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "sum_components_value = sum(components.value)",
+  "comments": null,
+  "topics": [
+    "Price Rollup"
+  ]
+}

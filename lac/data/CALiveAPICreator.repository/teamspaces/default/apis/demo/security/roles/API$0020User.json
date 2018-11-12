@@ -1,0 +1,108 @@
+{
+  "name": "API User",
+  "description": "Limited permissions on the entire API",
+  "defaultTablePermission": "N",
+  "defaultViewPermission": "N",
+  "defaultFunctionPermission": "N",
+  "globals": {
+  },
+  "apiVisibility": {
+    "table": {
+      "isRestricted": true,
+      "restrictedTo": [
+        "demo:LineItem"
+      ]
+    },
+    "view": {
+      "isRestricted": true,
+      "restrictedTo": [
+      ]
+    },
+    "resource": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "procedure": {
+      "isRestricted": true,
+      "restrictedTo": [
+      ]
+    },
+    "metatable": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "function": {
+      "isRestricted": true,
+      "restrictedTo": [
+      ]
+    }
+  },
+  "entityPermission": {
+    "Access customers": {
+      "entity": "demo:customer",
+      "description": "only customers associated with current user, per Auth Token (see Details tab, Globals)",
+      "accessLevels": [
+        "READ"
+      ],
+      "rowFilter": "\"name\" = '@{customerName}'",
+      "columnFilter": {
+        "isRestricted": false,
+        "restrictedTo": null
+      }
+    },
+    "Access lineitems": {
+      "entity": "demo:LineItem",
+      "description": "only line items associated with customer(s) for current user, per Auth Token (see Details tab, Globals)",
+      "accessLevels": [
+        "ALL"
+      ],
+      "rowFilter": "PurchaseOrder.customer_name = '@{customerName}'",
+      "columnFilter": {
+        "isRestricted": false,
+        "restrictedTo": null
+      }
+    },
+    "Access orders": {
+      "entity": "demo:PurchaseOrder",
+      "description": "only orders associated with customer(s) for current user, per Auth Token (see Details tab, Globals)",
+      "accessLevels": [
+        "READ"
+      ],
+      "rowFilter": "\"customer_name\" = '@{customerName}'",
+      "columnFilter": {
+        "isRestricted": false,
+        "restrictedTo": null
+      }
+    },
+    "Access products 2 full": {
+      "entity": "demo:product",
+      "description": "column security - product_number & name visible to all with insert, product 2 only",
+      "accessLevels": [
+        "ALL"
+      ],
+      "rowFilter": "\"product_number\" = 2",
+      "columnFilter": {
+        "isRestricted": false,
+        "restrictedTo": null
+      }
+    },
+    "Access products all restricted": {
+      "entity": "demo:product",
+      "description": "column security - product_number & name visible to all, but not insert",
+      "accessLevels": [
+        "READ",
+        "UPDATE"
+      ],
+      "rowFilter": null,
+      "columnFilter": {
+        "isRestricted": true,
+        "restrictedTo": [
+          "product_number",
+          "name"
+        ]
+      }
+    }
+  },
+  "functionPermission": {
+  }
+}

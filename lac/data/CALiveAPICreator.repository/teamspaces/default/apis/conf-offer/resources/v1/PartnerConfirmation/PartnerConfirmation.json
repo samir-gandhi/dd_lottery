@@ -1,0 +1,21 @@
+{
+  "name": "PartnerConfirmation",
+  "description": "When managers set the Approve flag on a Conference Offer, this resource provides mapping and transformation for sending confirmations to Partners.\n\nSee the Integration Rules (Alert Management - JSON Message).\n\nThis is a good example of Data Integration, based on Multiple Data Sources, with a Virtual Foreign Key across them defined in the Schema screen.",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "main",
+  "entity": "ConferenceOffers",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "name",
+      "alias": "name",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

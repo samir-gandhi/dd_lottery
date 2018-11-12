@@ -1,0 +1,33 @@
+{
+  "name": "SalesReports",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "main",
+  "entity": "PARTNERORDERS",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "IDENT",
+      "alias": "CUSTID",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "PRODUCTNAME",
+      "alias": "ProductName",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "CUSTNAME",
+      "alias": "CompanyName",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

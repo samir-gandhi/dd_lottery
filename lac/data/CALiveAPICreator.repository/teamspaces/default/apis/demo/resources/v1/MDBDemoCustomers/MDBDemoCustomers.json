@@ -1,0 +1,13 @@
+{
+  "name": "MDBDemoCustomers",
+  "description": "Multiple Database join, see the relationships to children under Schema.",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "customer",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": true
+}

@@ -1,0 +1,8 @@
+{
+  "name": "OrdersSvc",
+  "description": "RESTful Orders from project Demo)",
+  "siblingRank": 100,
+  "resourceType": "JavaScript",
+  "isCollection": true,
+  "joinCondition": null
+}

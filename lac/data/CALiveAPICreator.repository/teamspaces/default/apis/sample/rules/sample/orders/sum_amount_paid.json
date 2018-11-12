@@ -1,0 +1,17 @@
+{
+  "name": "sum_amount_paid",
+  "entity": "orders",
+  "isActive": true,
+  "ruleType": "sum",
+  "attribute": "amount_paid",
+  "roleToChildren": "payment_order_allocationsList",
+  "childAttribute": "amount",
+  "qualification": null,
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "amount_paid = sum(payment_order_allocationsList.amount)",
+  "comments": "Triggered by creation of allocation records",
+  "topics": [
+    "Allocate Payment"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "eventPreInsert_missingName_CreditLimit",
+  "entity": "customers",
+  "isActive": true,
+  "ruleType": "preinsertEvent",
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "PreInsert Event - handle missing name, missing credit limit",
+  "comments": "When POSTing (creating a new record) and name and or credit_limit is not provided,\nthis pre-insert event will generate values.",
+  "topics": [
+  ]
+}

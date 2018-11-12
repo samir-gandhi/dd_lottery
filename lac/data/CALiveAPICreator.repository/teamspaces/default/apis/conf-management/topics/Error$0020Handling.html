@@ -1,0 +1,18 @@
+<p>With&nbsp;<code>MessageAudit&nbsp;</code>With&nbsp;persisted even when errors occur, we can come back later and check the error handling.</p>
+
+<p>To test this</p>
+
+<ol>
+	<li>Set the MarketingProgram&#39;s isActive to false</li>
+	<li>In MktConf, Approve a Marketing Conference.
+	<ol>
+		<li>You should not see the Charges data.</li>
+	</ol>
+	</li>
+	<li>Set the MarketingProgram&#39;s isActive to true</li>
+	<li>Alter the MessageAudit ProcessedFlag, and save.&nbsp;
+	<ol>
+		<li>You should see the Charges data appear.</li>
+	</ol>
+	</li>
+</ol>

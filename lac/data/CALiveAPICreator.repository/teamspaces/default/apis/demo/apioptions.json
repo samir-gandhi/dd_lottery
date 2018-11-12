@@ -1,0 +1,37 @@
+{
+  "Allow Swagger without authentication": {
+    "dataType": "boolean",
+    "value": true,
+    "defaultValue": false
+  },
+  "Binary Output Encoding": {
+    "dataType": "enum",
+    "value": "base64",
+    "defaultValue": "hex"
+  },
+  "Force Binary Data as an Object": {
+    "dataType": "boolean",
+    "value": true,
+    "defaultValue": false
+  },
+  "Inline Limit Default": {
+    "dataType": "integer",
+    "value": 6000,
+    "defaultValue": 2000
+  },
+  "Permit Authorization parameter in URL": {
+    "dataType": "boolean",
+    "value": true,
+    "defaultValue": false
+  },
+  "Tech docs URL": {
+    "dataType": "string",
+    "value": "http://ca-doc.espressologic.com/docs/tutorial/business-logic-demo",
+    "defaultValue": null
+  },
+  "Type base URI": {
+    "dataType": "string",
+    "value": "urn:caliveapicreator:examples:demo:",
+    "defaultValue": "urn:caliveapicreator:"
+  }
+}

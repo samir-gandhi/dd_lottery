@@ -1,0 +1,14 @@
+{
+  "name": "For Suppliers",
+  "authToken": "supplier",
+  "description": null,
+  "userIdentifier": "",
+  "isActive": true,
+  "expiration": null,
+  "logging": "*=FINE",
+  "roles": [
+    "Full access"
+  ],
+  "globals": {
+  }
+}

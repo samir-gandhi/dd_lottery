@@ -1,0 +1,17 @@
+{
+  "name": "sum_sum_sub_department_budget",
+  "entity": "departments",
+  "isActive": true,
+  "ruleType": "sum",
+  "attribute": "sum_sub_department_budget",
+  "roleToChildren": "departmentsList",
+  "childAttribute": "budget_with_sub_department_budget",
+  "qualification": null,
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "sum_sub_department_budget = sum(departmentsList.budget_with_sub_department_budget)",
+  "comments": "Recursive Rollup",
+  "topics": [
+    "Budget Rollup"
+  ]
+}

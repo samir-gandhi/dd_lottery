@@ -1,0 +1,15 @@
+{
+  "name": "formula_price",
+  "entity": "products",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "price",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "price = return row.count_components > 0 ? row.sum_components_value : row.price",
+  "comments": "if/else",
+  "topics": [
+    "Price Rollup"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "formula_amount",
+  "entity": "lineitems",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "amount",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "amount = return row.part_price * row.quantity_ordered",
+  "comments": null,
+  "topics": [
+    "ChkCredit"
+  ]
+}

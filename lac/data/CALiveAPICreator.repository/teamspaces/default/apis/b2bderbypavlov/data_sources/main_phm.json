@@ -1,0 +1,184 @@
+{
+  "name": "main_phm",
+  "prefix": "main",
+  "title": "Database: Derby - Pavlov",
+  "databaseType": "DERBY",
+  "comments": "Created using Connect Wizard",
+  "isActive": true,
+  "isLogErrors": false,
+  "isSchemaEditable": false,
+  "isSupportBoolean": false,
+  "isReadOnly": false,
+  "useJNDIDataSource": false,
+  "url": "jdbc:derby:Pavlov",
+  "catalog": null,
+  "schema": "PAVLOV",
+  "username": "PAVLOV",
+  "encryptedPassword": null,
+  "encryptedPasswordSalt": "gTL8FWx/0zxcoiFXIq8Anu71JsMwe+nA2u5wawD1",
+  "maximumConnections": 20,
+  "tableExcludes": null,
+  "tableIncludes": null,
+  "procedureExcludes": null,
+  "procedureIncludes": null,
+  "nonPersistentAttributes": {
+  },
+  "tableInfos": {
+  },
+  "viewInfos": {
+  },
+  "procedureInfos": {
+  },
+  "schemaCache": {
+    "serializedSchemaVersion": "Product @@logicServiceFullVersion@@ Serialized MetaSchema 49",
+    "prefix": "main",
+    "catalog": null,
+    "schema": "PAVLOV",
+    "sqlStrategy": {
+      "sqlStrategyClassName": "com.kahuna.server.db.derby.SqlStrategyDerby",
+      "isAdmin": false,
+      "supportBoolean": false,
+      "databaseProductName": "Apache Derby",
+      "databaseProductVersion": "10.14.1.0 - (1808820)"
+    },
+    "metaHolder": {
+      "baseTypes": [
+      ],
+      "tables": [
+        {
+          "entity": "PARTNERORDERS",
+          "catalog": null,
+          "schema": "PAVLOV",
+          "remarks": null,
+          "columns": [
+            {
+              "name": "IDENT",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": true,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": true,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "INT",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "INT",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            },
+            {
+              "name": "CUSTNAME",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(32)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(32)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 32,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "PRODUCTNAME",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "VARCHAR(32)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "VARCHAR(32)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 32,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "RECEIVEDDATE",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "DATE",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.DateType",
+                "dbTypeName": "DATE",
+                "jdbcSqlType": 91,
+                "genericType": "date",
+                "isDistinctType": false,
+                "isUserDefinedType": false
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "SQL181106014105630",
+              "isDatabasePrimary": true,
+              "columns": [
+                "IDENT"
+              ]
+            }
+          ]
+        }
+      ],
+      "views": [
+      ],
+      "procedures": [
+      ],
+      "sequences": [
+      ],
+      "foreignKeys": [
+      ]
+    },
+    "tableViewFilteredCount": 0,
+    "procedureFilteredCount": 0,
+    "supportBoolean": false
+  }
+}

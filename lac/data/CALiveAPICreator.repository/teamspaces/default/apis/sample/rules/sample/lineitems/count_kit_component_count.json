@@ -1,0 +1,16 @@
+{
+  "name": "count_kit_component_count",
+  "entity": "lineitems",
+  "isActive": true,
+  "ruleType": "count",
+  "attribute": "kit_component_count",
+  "roleToChildren": "lineitemsList",
+  "qualification": null,
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "kit_component_count = count(lineitemsList)",
+  "comments": "0 => not a kit",
+  "topics": [
+    "Kit Explosion"
+  ]
+}

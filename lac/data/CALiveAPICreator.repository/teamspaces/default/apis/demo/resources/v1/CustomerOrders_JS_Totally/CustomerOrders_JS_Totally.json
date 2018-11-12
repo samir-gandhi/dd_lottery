@@ -1,0 +1,8 @@
+{
+  "name": "CustomerOrders_JS_Totally",
+  "description": "Orchestration of demo customers and sample orders, to compare manual code vs. declarative\n  -- Join customer (from demo) and orders (from sample).\n\n             Resource                                     Approach              Effort                                                   Services\n====================                  ==========    ============      ========================================\nCustomerOrders_JS_Totally                 manual code     50 lines of code      minimal services (filtering, no pagination, no update)\nCustomerOrders_JS_SubResource       mix                    10 lines of code      full services for root, minimal for orders subresource\nCustomerOrders_Declarative               point/click           0                            full services  (filtering, pagination, update)\n\nDeclarative: least effort and full services, so use where connector exists (built in, or Data Source Provider)\nManual:       flexibility to integrate arbitrary source of data",
+  "siblingRank": 100,
+  "resourceType": "JavaScript",
+  "isCollection": true,
+  "joinCondition": null
+}
