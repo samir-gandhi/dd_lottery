@@ -1,0 +1,14 @@
+{
+  "name": "Sample1",
+  "authToken": "Sample1Key",
+  "description": null,
+  "userIdentifier": null,
+  "isActive": true,
+  "expiration": null,
+  "logging": "admini=OFF,buslog=FINE,depend=OFF,generl=OFF,persis=FINE,engine=FINER,resrcs=OFF,securi=OFF,sysdbg=OFF,ulogic=OFF",
+  "roles": [
+    "National administrator"
+  ],
+  "globals": {
+  }
+}

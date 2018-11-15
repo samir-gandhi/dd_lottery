@@ -1,0 +1,5 @@
+{
+  "name": "ChkCredit",
+  "color": "#16f31c",
+  "summary": "Story: Place Order. Task: Ensure the balance does not exceed the credit limit."
+}

@@ -1,0 +1,169 @@
+{
+  "name": "Normal user",
+  "description": "Can access selected data",
+  "defaultTablePermission": "A",
+  "defaultViewPermission": "R",
+  "defaultFunctionPermission": "X",
+  "globals": {
+    "current_employee": {
+      "name": "current_employee",
+      "description": null,
+      "isRequired": true,
+      "executionOrder": 1,
+      "codeType": "SQL",
+      "prefix": "sample",
+      "sqlFragment": " * from \"employees\" where \"name\" like '%Lincoln%'"
+    }
+  },
+  "apiVisibility": {
+    "table": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "view": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "resource": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "procedure": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "metatable": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "function": {
+      "isRestricted": false,
+      "restrictedTo": null
+    }
+  },
+  "entityPermission": {
+    "Access customers": {
+      "entity": "sample:customers",
+      "description": null,
+      "accessLevels": [
+        "ALL"
+      ],
+      "rowFilter": "\"notes\" like '%@{current_employee.name}%'",
+      "columnFilter": {
+        "isRestricted": true,
+        "restrictedTo": [
+          "name",
+          "balance",
+          "credit_limit"
+        ]
+      }
+    },
+    "Access depts": {
+      "entity": "sample:departments",
+      "description": null,
+      "accessLevels": [
+        "READ"
+      ],
+      "rowFilter": null,
+      "columnFilter": {
+        "isRestricted": true,
+        "restrictedTo": [
+          "name",
+          "budget"
+        ]
+      }
+    },
+    "Access emps": {
+      "entity": "sample:employees",
+      "description": null,
+      "accessLevels": [
+        "READ"
+      ],
+      "rowFilter": null,
+      "columnFilter": {
+        "isRestricted": true,
+        "restrictedTo": [
+          "name",
+          "employee_type",
+          "department_name",
+          "notes"
+        ]
+      }
+    },
+    "Access lineitems": {
+      "entity": "sample:lineitems",
+      "description": null,
+      "accessLevels": [
+        "ALL"
+      ],
+      "rowFilter": "itemOrder.salesrep_name = '@{current_employee.name}'",
+      "columnFilter": {
+        "isRestricted": true,
+        "restrictedTo": [
+          "product_name",
+          "quantity_ordered",
+          "part_price",
+          "amount",
+          "order_ident"
+        ]
+      }
+    },
+    "Access orders": {
+      "entity": "sample:orders",
+      "description": null,
+      "accessLevels": [
+        "ALL"
+      ],
+      "rowFilter": "\"amount_total\" <= @{maxAmount}",
+      "columnFilter": {
+        "isRestricted": true,
+        "restrictedTo": [
+          "customer_name",
+          "salesrep_name",
+          "amount_total",
+          "placed_date",
+          "item_count",
+          "approving_officer"
+        ]
+      }
+    },
+    "Access payments": {
+      "entity": "sample:payments",
+      "description": null,
+      "accessLevels": [
+        "READ"
+      ],
+      "rowFilter": null,
+      "columnFilter": {
+        "isRestricted": false,
+        "restrictedTo": null
+      }
+    },
+    "Access payment_order_allocations": {
+      "entity": "sample:payment_order_allocations",
+      "description": null,
+      "accessLevels": [
+        "READ"
+      ],
+      "rowFilter": "allocationOrder.salesrep_name = '@{current_employee.name}'",
+      "columnFilter": {
+        "isRestricted": false,
+        "restrictedTo": null
+      }
+    },
+    "Access products": {
+      "entity": "sample:products",
+      "description": null,
+      "accessLevels": [
+        "READ"
+      ],
+      "rowFilter": "$.\"name\" != 'Shovel'",
+      "columnFilter": {
+        "isRestricted": false,
+        "restrictedTo": null
+      }
+    }
+  },
+  "functionPermission": {
+  }
+}

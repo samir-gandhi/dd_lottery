@@ -1,0 +1,6 @@
+{
+  "name": "Partner Response",
+  "eventType": "response",
+  "comments": "Note: this is a *response* event, to compute the json response to be returned to the client:\n\n...return JSON Account Summary (not txsummary).",
+  "isActive": true
+}

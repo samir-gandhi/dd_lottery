@@ -1,0 +1,517 @@
+{
+  "name": "hotspot - lac",
+  "prefix": "main",
+  "title": null,
+  "databaseType": "MYSQL",
+  "comments": "Created using Connect Wizard",
+  "isActive": true,
+  "isLogErrors": false,
+  "isSchemaEditable": false,
+  "isSupportBoolean": false,
+  "isReadOnly": false,
+  "useJNDIDataSource": false,
+  "url": "jdbc:mysql://mysql-lac:3306/hotspot",
+  "catalog": "hotspot",
+  "schema": null,
+  "username": "lac",
+  "encryptedPassword": "2:tmTHMAUITkJrUrIDbYdomG/87WeZZxJ42h/9Pgv34slhvR2B7TUf8Q==",
+  "encryptedPasswordSalt": "PhiUSDForirWd4J6/xc2PBkZY8lGqPIoMtKi4x6/",
+  "maximumConnections": 20,
+  "tableExcludes": null,
+  "tableIncludes": null,
+  "procedureExcludes": null,
+  "procedureIncludes": null,
+  "nonPersistentAttributes": {
+  },
+  "tableInfos": {
+  },
+  "viewInfos": {
+  },
+  "procedureInfos": {
+  },
+  "schemaCache": {
+    "serializedSchemaVersion": "Product @@logicServiceFullVersion@@ Serialized MetaSchema 49",
+    "prefix": "main",
+    "catalog": "hotspot",
+    "schema": null,
+    "sqlStrategy": {
+      "sqlStrategyClassName": "com.kahuna.server.db.mysql.SqlStrategyMySql",
+      "isAdmin": false,
+      "supportBoolean": false,
+      "databaseProductName": "MySQL",
+      "databaseProductVersion": "5.7.24"
+    },
+    "metaHolder": {
+      "baseTypes": [
+        {
+          "className": "com.kahuna.server.metadata.udt.BooleanType",
+          "dbTypeName": "bit(1)",
+          "jdbcSqlType": 16,
+          "genericType": "boolean",
+          "isDistinctType": false,
+          "isUserDefinedType": false
+        },
+        {
+          "className": "com.kahuna.server.metadata.udt.TimestampType",
+          "dbTypeName": "datetime",
+          "jdbcSqlType": 93,
+          "genericType": "timestamp",
+          "isDistinctType": false,
+          "isUserDefinedType": false,
+          "precision": 0
+        },
+        {
+          "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+          "dbTypeName": "int(11)",
+          "jdbcSqlType": 4,
+          "genericType": "number",
+          "isDistinctType": false,
+          "isUserDefinedType": false,
+          "numBytes": 4
+        },
+        {
+          "className": "com.kahuna.server.metadata.udt.StringType",
+          "dbTypeName": "varchar(100)",
+          "jdbcSqlType": 12,
+          "genericType": "string",
+          "isDistinctType": false,
+          "isUserDefinedType": false,
+          "maxLength": 100,
+          "isFixedLength": false
+        }
+      ],
+      "tables": [
+        {
+          "entity": "testSchedulerFromGW",
+          "catalog": "hotspot",
+          "schema": null,
+          "remarks": null,
+          "columns": [
+            {
+              "name": "ident",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": true,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "int(11)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "int(11)",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            },
+            {
+              "name": "testColumn",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "varchar(100)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "varchar(100)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 100,
+                "isFixedLength": false
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "PRIMARY",
+              "isDatabasePrimary": true,
+              "columns": [
+                "ident"
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "Winners",
+          "catalog": "hotspot",
+          "schema": null,
+          "remarks": null,
+          "columns": [
+            {
+              "name": "ident",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": true,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "int(11)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "int(11)",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            },
+            {
+              "name": "draw_ident",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "int(11)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "int(11)",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            },
+            {
+              "name": "Name",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "varchar(100)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "varchar(100)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 100,
+                "isFixedLength": false
+              }
+            },
+            {
+              "name": "Numbers",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "varchar(100)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.StringType",
+                "dbTypeName": "varchar(100)",
+                "jdbcSqlType": 12,
+                "genericType": "string",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "maxLength": 100,
+                "isFixedLength": false
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "Name_UNIQUE",
+              "isDatabasePrimary": false,
+              "columns": [
+                "Name",
+                "Numbers",
+                "draw_ident"
+              ]
+            },
+            {
+              "name": "PRIMARY",
+              "isDatabasePrimary": true,
+              "columns": [
+                "ident",
+                "draw_ident",
+                "Name",
+                "Numbers"
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "WinningNumbers",
+          "catalog": "hotspot",
+          "schema": null,
+          "remarks": null,
+          "columns": [
+            {
+              "name": "ident",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "int(11)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "int(11)",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            },
+            {
+              "name": "draws_ident",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "int(11)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "int(11)",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            },
+            {
+              "name": "IsBullseye",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "bit(1)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.BooleanType",
+                "dbTypeName": "bit(1)",
+                "jdbcSqlType": 16,
+                "genericType": "boolean",
+                "isDistinctType": false,
+                "isUserDefinedType": false
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "PRIMARY",
+              "isDatabasePrimary": true,
+              "columns": [
+                "ident",
+                "draws_ident"
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "draws",
+          "catalog": "hotspot",
+          "schema": null,
+          "remarks": null,
+          "columns": [
+            {
+              "name": "DrawNumber",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": false,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "int(11)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "int(11)",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            },
+            {
+              "name": "DrawCloseTime",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "datetime",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.TimestampType",
+                "dbTypeName": "datetime",
+                "jdbcSqlType": 93,
+                "genericType": "timestamp",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "precision": 0
+              }
+            },
+            {
+              "name": "NumberOfWinners",
+              "remarks": null,
+              "jdbcSqlType": 0,
+              "size": 0,
+              "nullable": true,
+              "numDecimalDigits": 0,
+              "generatedStrategy": null,
+              "autoIncrement": false,
+              "isVersion": false,
+              "isForeignKey": false,
+              "defaulted": false,
+              "dateTimePrecision": -2147483648,
+              "dbColumnType": null,
+              "baseTypeName": "int(11)",
+              "isUserDefinedType": false,
+              "baseType": {
+                "className": "com.kahuna.server.metadata.udt.IntegralNumberType",
+                "dbTypeName": "int(11)",
+                "jdbcSqlType": 4,
+                "genericType": "number",
+                "isDistinctType": false,
+                "isUserDefinedType": false,
+                "numBytes": 4
+              }
+            }
+          ],
+          "keys": [
+            {
+              "name": "PRIMARY",
+              "isDatabasePrimary": true,
+              "columns": [
+                "DrawNumber"
+              ]
+            }
+          ]
+        }
+      ],
+      "views": [
+      ],
+      "procedures": [
+      ],
+      "sequences": [
+      ],
+      "foreignKeys": [
+        {
+          "entity": "draw_ident",
+          "catalog": "hotspot",
+          "schema": null,
+          "remarks": null,
+          "updateRule": "CASCADE",
+          "deleteRule": "CASCADE",
+          "parent": {
+            "catalog": "hotspot",
+            "schema": null,
+            "object": "draws"
+          },
+          "child": {
+            "catalog": "hotspot",
+            "schema": null,
+            "object": "Winners"
+          },
+          "columns": [
+            {
+              "parent": "DrawNumber",
+              "child": "draw_ident"
+            }
+          ]
+        }
+      ]
+    },
+    "tableViewFilteredCount": 0,
+    "procedureFilteredCount": 0,
+    "supportBoolean": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "API Owner",
+  "description": "Full permissions on the entire API",
+  "defaultTablePermission": "A",
+  "defaultViewPermission": "R",
+  "defaultFunctionPermission": "X",
+  "globals": {
+  },
+  "apiVisibility": {
+    "table": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "view": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "resource": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "procedure": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "metatable": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "function": {
+      "isRestricted": false,
+      "restrictedTo": null
+    }
+  },
+  "entityPermission": {
+    "Read only": {
+      "entity": "sample:orders",
+      "description": "Reads are fine, but updates should go through the Sample API.",
+      "accessLevels": [
+        "READ"
+      ],
+      "rowFilter": null,
+      "columnFilter": {
+        "isRestricted": false,
+        "restrictedTo": null
+      }
+    }
+  },
+  "functionPermission": {
+  }
+}

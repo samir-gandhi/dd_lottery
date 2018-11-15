@@ -1,0 +1,16 @@
+[
+  {
+    "parentEntity": "main:draws",
+    "childEntity": "main:Winners",
+    "roleToParent": "draws",
+    "roleToChild": "Winners_List",
+    "deleteRule": "Cascade",
+    "updateRule": "Cascade",
+    "parentColumns": [
+      "DrawNumber"
+    ],
+    "childColumns": [
+      "draw_ident"
+    ]
+  }
+]

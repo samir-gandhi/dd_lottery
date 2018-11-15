@@ -1,0 +1,51 @@
+{
+  "name": "Guest",
+  "description": "No stealth bolts",
+  "defaultTablePermission": "A",
+  "defaultViewPermission": "R",
+  "defaultFunctionPermission": "X",
+  "globals": {
+  },
+  "apiVisibility": {
+    "table": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "view": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "resource": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "procedure": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "metatable": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "function": {
+      "isRestricted": false,
+      "restrictedTo": null
+    }
+  },
+  "entityPermission": {
+    "No stealth orders": {
+      "entity": "sample:orders",
+      "description": null,
+      "accessLevels": [
+        "READ"
+      ],
+      "rowFilter": "\"ident\" not in (select o.\"ident\" from \"orders\" o  join \"lineitems\" l on l.\"order_ident\" = o.\"ident\" left join \"products\" p on p.\"name\" = l.\"product_name\" where p.\"is_secret\" = true)",
+      "columnFilter": {
+        "isRestricted": false,
+        "restrictedTo": null
+      }
+    }
+  },
+  "functionPermission": {
+  }
+}

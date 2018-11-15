@@ -1,0 +1,8 @@
+<p><a href="https://docops.ca.com/ca-live-api-creator/5-1/en/getting-started/reactive-logic-tutorial/transaction-parameters-example" target="_blank">Most</a> updates are updates (Posts, Puts or Deletes) to rows, processed per logic as shown in the example above. &nbsp;Sometimes, however, transactions require arguments. &nbsp;Consider giving an employee a raise, supplying the percent raise as a argument.<br />
+<br />
+You can issue a POST like this:</p>
+
+<p><code>https://MyServer/sample/v1/sample%3Aemployees/charlie?arg.RaisePercent=10</code></p>
+
+<p><br />
+Which is handled by your logic like this, by reference to the&nbsp;<a href="https://docops.ca.com/ca-live-api-creator/5-1/en/developing-apis/extensibility/the-req-object" target="_blank">Request Object</a>:</p>

@@ -1,0 +1,14 @@
+{
+  "name": "Sample2",
+  "authToken": "Sample2Key",
+  "description": null,
+  "userIdentifier": null,
+  "isActive": true,
+  "expiration": null,
+  "logging": null,
+  "roles": [
+    "Read-only admin"
+  ],
+  "globals": {
+  }
+}

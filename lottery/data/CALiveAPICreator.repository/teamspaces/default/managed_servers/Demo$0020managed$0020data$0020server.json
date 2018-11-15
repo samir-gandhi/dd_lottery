@@ -1,0 +1,12 @@
+{
+  "name": "Demo managed data server",
+  "datasourceName": null,
+  "url": "jdbc:derby:directory:ManagedData;create=true",
+  "catalogName": null,
+  "userName": "DEMO_MANAGED_DATA",
+  "description": "This is created as part of the evaluation package",
+  "isActive": true,
+  "managedServerType": "DERBY",
+  "encryptedPassword": null,
+  "encryptedPasswordSalt": "uaPJ5aUsUm5q0vI+zGVvQqyDRUs26T3Gm79/EL1k"
+}

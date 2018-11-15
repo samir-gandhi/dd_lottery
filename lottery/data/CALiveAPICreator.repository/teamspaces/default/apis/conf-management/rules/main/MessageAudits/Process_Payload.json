@@ -1,0 +1,19 @@
+{
+  "name": "Process_Payload",
+  "entity": "MessageAudits",
+  "isActive": true,
+  "ruleType": "event",
+  "asynchronous": false,
+  "appliesTo": {
+    "insert": false,
+    "update": true,
+    "delete": false
+  },
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Process Payload to underlying tables",
+  "comments": "Initiates error retry processing for a request.\n\nUnder normal circumstances, the Listener Posts to resource ProcessCharges, which persists and processes the underlying data.\nBut, since errors might occur (e.g., missing MarketingProgram), ExtendedProperties save the 'payload' to MessageAudits (via resource PersistCharges).\nThat enables you to correct the error, and then retry the transaction by changing ProcessedStatus.\n\nThis logic simply re-Posts the data to ProcessCharges.  The MessageAudits row contains the JSON or XML payload in the MsgContent column.",
+  "topics": [
+    "Process Message"
+  ]
+}

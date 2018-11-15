@@ -1,0 +1,114 @@
+[
+  {
+    "parentEntity": "demo:customer",
+    "childEntity": "demo:PurchaseOrder",
+    "roleToParent": "customer",
+    "roleToChild": "PurchaseOrderList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "customer_name"
+    ]
+  },
+  {
+    "parentEntity": "demo:customer",
+    "childEntity": "finance:orders",
+    "roleToParent": "demoCustomer",
+    "roleToChild": "financeOrders",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "customer_name"
+    ]
+  },
+  {
+    "parentEntity": "demo:customer",
+    "childEntity": "sample:orders",
+    "roleToParent": "customer",
+    "roleToChild": "SampleOrders_List",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "customer_name"
+    ]
+  },
+  {
+    "parentEntity": "demo:employee",
+    "childEntity": "demo:employee_picture",
+    "roleToParent": "employee",
+    "roleToChild": "employee_pictureList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "employee_id"
+    ],
+    "childColumns": [
+      "employee_id"
+    ]
+  },
+  {
+    "parentEntity": "demo:employee",
+    "childEntity": "demo:PurchaseOrder",
+    "roleToParent": "salesrep",
+    "roleToChild": "PurchaseOrderList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "employee_id"
+    ],
+    "childColumns": [
+      "salesrep_id"
+    ]
+  },
+  {
+    "parentEntity": "demo:product",
+    "childEntity": "demo:LineItem",
+    "roleToParent": "product",
+    "roleToChild": "LineItemList",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "product_number"
+    ],
+    "childColumns": [
+      "product_number"
+    ]
+  },
+  {
+    "parentEntity": "demo:PurchaseOrder",
+    "childEntity": "demo:LineItem",
+    "roleToParent": "PurchaseOrder",
+    "roleToChild": "LineItemList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "order_number"
+    ],
+    "childColumns": [
+      "order_number"
+    ]
+  },
+  {
+    "parentEntity": "demo:PurchaseOrder",
+    "childEntity": "demo:purchaseorder_audit",
+    "roleToParent": "PurchaseOrder",
+    "roleToChild": "purchaseorder_auditList",
+    "deleteRule": "Cascade",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "order_number"
+    ],
+    "childColumns": [
+      "order_number"
+    ]
+  }
+]

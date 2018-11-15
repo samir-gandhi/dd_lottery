@@ -1,0 +1,32 @@
+{
+  "name": "PublishManagementConnection",
+  "isActive": false,
+  "description": "MQTT connection used to publish messages of topic “ManagementCost” to notify Conference Management API that event is approved.",
+  "providerName": "MQTT",
+  "parameters": {
+    "clientId": {
+      "name": "clientId",
+      "value": "RANDOM",
+      "comments": null,
+      "kind": null
+    },
+    "keepAliveInterval": {
+      "name": "keepAliveInterval",
+      "value": "20",
+      "comments": null,
+      "kind": null
+    },
+    "automaticReconnect": {
+      "name": "automaticReconnect",
+      "value": "true",
+      "comments": null,
+      "kind": null
+    },
+    "broker": {
+      "name": "broker",
+      "value": "tcp://iot.eclipse.org:1883",
+      "comments": "local might be tcp://localhost:1883\n\nremote might be tcp://iot.eclipse.org:1883",
+      "kind": null
+    }
+  }
+}

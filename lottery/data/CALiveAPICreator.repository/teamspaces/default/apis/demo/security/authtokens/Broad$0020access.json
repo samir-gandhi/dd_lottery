@@ -1,0 +1,14 @@
+{
+  "name": "Broad access",
+  "authToken": "demo_full",
+  "description": null,
+  "userIdentifier": "sam",
+  "isActive": true,
+  "expiration": null,
+  "logging": "*=FINE",
+  "roles": [
+    "API Owner"
+  ],
+  "globals": {
+  }
+}

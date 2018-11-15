@@ -1,0 +1,14 @@
+{
+  "name": "Admin key",
+  "authToken": "bsqep8ZEWZRzRnCxoeQs",
+  "description": "bsqep8ZEWZRzRnCxoeQs",
+  "userIdentifier": null,
+  "isActive": true,
+  "expiration": null,
+  "logging": "*=FINE",
+  "roles": [
+    "Full access"
+  ],
+  "globals": {
+  }
+}

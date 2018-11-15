@@ -1,0 +1,51 @@
+{
+  "name": "Event Organizer",
+  "description": null,
+  "defaultTablePermission": "A",
+  "defaultViewPermission": "A",
+  "defaultFunctionPermission": "X",
+  "globals": {
+  },
+  "apiVisibility": {
+    "table": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "view": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "resource": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "procedure": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "metatable": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "function": {
+      "isRestricted": false,
+      "restrictedTo": null
+    }
+  },
+  "entityPermission": {
+    "Secret Conferences": {
+      "entity": "main:ConferenceOffers",
+      "description": "Hide secret events (row level security)",
+      "accessLevels": [
+        "ALL"
+      ],
+      "rowFilter": "name not like '%secret%'",
+      "columnFilter": {
+        "isRestricted": false,
+        "restrictedTo": null
+      }
+    }
+  },
+  "functionPermission": {
+  }
+}

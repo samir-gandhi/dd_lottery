@@ -1,0 +1,7 @@
+{
+  "name": "Demo",
+  "urlFragment": "demo",
+  "comments": "Welcome examples.",
+  "isEnabled": true,
+  "authProviderName": "Built-in authentication"
+}

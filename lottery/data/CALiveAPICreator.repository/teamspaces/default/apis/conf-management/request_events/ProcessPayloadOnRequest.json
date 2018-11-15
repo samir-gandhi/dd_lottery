@@ -1,0 +1,6 @@
+{
+  "name": "ProcessPayloadOnRequest",
+  "eventType": "request",
+  "comments": "Persists the Payload for resource ProcessCharges, for later error retry.  See rules on MessageAudits.",
+  "isActive": true
+}

@@ -1,0 +1,17 @@
+{
+  "name": "count_count_components",
+  "entity": "products",
+  "isActive": true,
+  "ruleType": "count",
+  "attribute": "count_components",
+  "roleToChildren": "components",
+  "qualification": null,
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "count_components = count(components)",
+  "comments": "Count as existence check",
+  "topics": [
+    "Kit Explosion",
+    "Price Rollup"
+  ]
+}

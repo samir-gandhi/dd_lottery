@@ -1,0 +1,15 @@
+{
+  "name": "formula_empsales_month",
+  "entity": "orders",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "empsales_month",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": false,
+  "title": "empsales_month = Month of placed_date",
+  "comments": null,
+  "topics": [
+    "Sales Tracking"
+  ]
+}

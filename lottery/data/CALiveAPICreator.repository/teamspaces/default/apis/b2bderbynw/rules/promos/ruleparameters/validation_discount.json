@@ -1,0 +1,15 @@
+{
+  "name": "validation_discount",
+  "entity": "ruleparameters",
+  "isActive": true,
+  "ruleType": "validation",
+  "codeType": "JavaScript",
+  "errorMessage": "Sorry, discounts must be between 90 and 101",
+  "problemAttributes": [
+  ],
+  "isAutoTitle": false,
+  "title": "Discount must be between 90 and 101",
+  "comments": null,
+  "topics": [
+  ]
+}

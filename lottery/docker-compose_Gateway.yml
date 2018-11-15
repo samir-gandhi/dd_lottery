@@ -1,0 +1,40 @@
+version: '2.2'
+services:
+  api-gateway:
+    image: caapim/gateway
+#    cpus: 4
+#    mem_limit: 6g
+#    memswap_limit: 6g
+#    mem_swappiness: 0
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+      - "9443:9443"
+    volumes:
+      - /opt/SecureSpan/Gateway/node/default/etc/bootstrap/services/restman
+      - ./SSG_LICENSE.xml:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/license.xml
+    environment:
+      ACCEPT_LICENSE: "true"
+      SSG_ADMIN_USERNAME: "admin"
+      SSG_ADMIN_PASSWORD: "CAdemo123"
+#      SSG_DATABASE_JDBC_URL: "jdbc:mysql://mysql-server:3306/ssg"
+#      SSG_DATABASE_USER: "ssgdbuser"
+#      SSG_DATABASE_PASSWORD: "dbpassword"
+#      SSG_CLUSTER_HOST: "mycompany.host.com"
+#      SSG_CLUSTER_PASSWORD: "clusterpassword"
+#      SSG_JVM_HEAP: "4g"
+#      EXTRA_JAVA_ARGS: "-XX:ParallelGCThreads=4 -Dcom.l7tech.bootstrap.autoTrustSslKey=trustAnchor,TrustedFor.SSL,TrustedFor.SAML_ISSUER"
+#
+#  mysql-server:
+#    image: mysql:5.7
+#    mem_limit: 512m
+#    environment:
+#      - MYSQL_RANDOM_ROOT_PASSWORD=true
+#      - MYSQL_USER=ssgdbuser
+#      - MYSQL_PASSWORD=dbpassword
+#      - MYSQL_DATABASE=ssg
+#    command:
+#      - "--character-set-server=utf8"
+#      - "--innodb_log_buffer_size=32M"
+#      - "--innodb_log_file_size=80M"
+#      - "--max_allowed_packet=8M"

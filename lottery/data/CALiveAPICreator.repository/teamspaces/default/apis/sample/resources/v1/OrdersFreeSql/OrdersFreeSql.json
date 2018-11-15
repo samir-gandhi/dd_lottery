@@ -1,0 +1,8 @@
+{
+  "name": "OrdersFreeSql",
+  "description": "Illustrates Free SQL",
+  "siblingRank": 100,
+  "resourceType": "FreeSQL",
+  "prefix": "sample",
+  "isCollection": true
+}

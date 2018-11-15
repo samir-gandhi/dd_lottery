@@ -1,0 +1,16 @@
+{
+  "name": "validation_budget",
+  "entity": "ConferenceOffers",
+  "isActive": true,
+  "ruleType": "commitValidation",
+  "codeType": "JavaScript",
+  "errorMessage": "Sorry, Budget Exceeded",
+  "problemAttributes": [
+  ],
+  "isAutoTitle": false,
+  "title": "Validation: row.Budget >= (row.ExhibitsCost + row.TalksCost)",
+  "comments": null,
+  "topics": [
+    "2. Logic"
+  ]
+}

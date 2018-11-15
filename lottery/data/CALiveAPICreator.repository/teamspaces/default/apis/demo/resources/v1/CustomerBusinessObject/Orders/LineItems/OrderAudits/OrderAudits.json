@@ -1,0 +1,14 @@
+{
+  "name": "OrderAudits",
+  "description": "Audits of Order",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "purchaseorder_audit",
+  "join": "\"order_number\" = [order_number]",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": true
+}

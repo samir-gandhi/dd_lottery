@@ -1,0 +1,10 @@
+{
+  "name": "ConfigLib",
+  "version": "1.0",
+  "isUsedByProject": true,
+  "title": "ConfigLib",
+  "description": "This is a JavaScript library",
+  "groupName": "newlib",
+  "docsURL": null,
+  "referenceURL": null
+}

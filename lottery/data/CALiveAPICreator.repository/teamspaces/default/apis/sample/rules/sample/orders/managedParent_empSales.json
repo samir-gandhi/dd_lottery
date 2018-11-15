@@ -1,0 +1,14 @@
+{
+  "name": "managedParent_empSales",
+  "entity": "orders",
+  "isActive": true,
+  "ruleType": "managedParent",
+  "roleToParent": "empSales",
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Create parent using role empSales if it does not exist.",
+  "comments": null,
+  "topics": [
+    "Sales Tracking"
+  ]
+}

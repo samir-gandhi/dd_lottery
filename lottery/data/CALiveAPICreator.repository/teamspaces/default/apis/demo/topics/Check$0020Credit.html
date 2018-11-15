@@ -1,0 +1,119 @@
+<h2>Business Context</h2>
+
+<p>Story: <strong>Place Order.</strong> &nbsp;</p>
+
+<p>Task/Requirement: <strong>Check Credit.</strong>&nbsp;&nbsp;(or, your methodology / terminology).</p>
+
+<p>&nbsp;</p>
+
+<h2>Business view</h2>
+
+<p>When placing&nbsp;an order, <em>check credit</em> - elaborated as follows (the <cite>&quot;cocktail napkin spec&quot;</cite>)...&nbsp;</p>
+
+<ul>
+	<li>the Balance must be less than or equal to the Credit Limit, where... &nbsp;(step-wise definition of terms)</li>
+	<li>the Balance is the sum of the unpaid Order Amount Totals, where...</li>
+	<li>the Amount Total is the sum of the LineItem Amounts, where...</li>
+	<li>the Amount is the discounted Price * Quantity, where...</li>
+	<li>the Price is obtained from the Product</li>
+</ul>
+
+<p>A good spec - clear, concise.</p>
+
+<p>&nbsp;</p>
+
+<hr />
+<h2>Conventional Design</h2>
+
+<p>In a conventional approach, you might design the following <strong>pseudocode</strong>:</p>
+
+<ol>
+	<li>Compute the LineItem.amount
+	<ol>
+		<li>Read the Product to get the Price</li>
+		<li>Multiply by qty_ordered to compute the amount</li>
+	</ol>
+	</li>
+	<li>Update the PurchaseOrder.amount_total
+	<ol>
+		<li>Read the PurchaseOrder</li>
+		<li>Increase the amount_total</li>
+		<li>Update the PurchaseOrder (to cache)</li>
+	</ol>
+	</li>
+	<li>Update the Customer.balance
+	<ol>
+		<li>Read the Customer,</li>
+		<li>Increase the balance</li>
+		<li>Update the Customer (to cache)</li>
+	</ol>
+	</li>
+	<li>Check that&nbsp;balance &lt;= credit_limit
+	<ol>
+		<li>Throw exception with error message for UI handling</li>
+		<li>Rollback the transaction</li>
+	</ol>
+	</li>
+</ol>
+
+<p>But Place Order is&nbsp;<em><strong>just one Story</strong>.</em>&nbsp;&nbsp;We need analogous logic for <em>all the related</em> Stories (Detete Order, Pay Order, etc etc).</p>
+
+<p>&nbsp;</p>
+
+<hr />
+<h2>Reactive Rule Approach</h2>
+
+<p>And that&#39;s the power of declarative reactive logic. &nbsp;You simply state the rules below (nearly the same as the cocktail napkin).</p>
+
+<p>&nbsp;</p>
+
+<h2>Reactive Rule Execution: Watch, React and&nbsp;Chain</h2>
+
+<p>And (as in a spreadsheet), the rules&nbsp;are <em>automatically</em> applied to all incoming transactions:</p>
+
+<ol>
+	<li>They <strong><em>watch</em></strong>&nbsp;for changes in data referenced by rules</li>
+	<li>They&nbsp;<em><strong>react</strong></em>&nbsp;to changes in referenced data. &nbsp;Execution order is dictated by dependencies. &nbsp;</li>
+	<li>They&nbsp;<em><strong>chain</strong></em>&nbsp;- including across tables. &nbsp;So changes to line items affect their order, which affect their customer</li>
+</ol>
+
+<p>Note it works across tables. &nbsp;Consider&nbsp;the customer balance - the sum of the unpaid order amounts.<br />
+It works rather like a spreadsheet. &nbsp;Order changes are watched, and the balance is</p>
+
+<ul>
+	<li>increased when order inserted</li>
+	<li>decreased when order deleted... or paid</li>
+	<li>adjusted when the order amount total is changed... or assigned to a new customer... or the line items are altered</li>
+</ul>
+
+<p>Observe persistence is automated (no need to read/write the customer, or deal with transactions). &nbsp;And it&#39;s optimized:</p>
+
+<ul>
+	<li>adjustments are 1 row updates, not select sum queries</li>
+	<li>sql is averted if the watched data is not changed</li>
+	<li>caching is provided (inserting multiple line items results in just 1 adjustment to order and customer)</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+<h2>Bottom Line</h2>
+
+<p>That means the following Stories are&nbsp;<em>automatically</em>&nbsp;addressed with our 5 &quot;cocktail napkin&quot;&nbsp;rules:</p>
+
+<ul>
+	<li>Delete Order - the balance is reduced</li>
+	<li>Pay Order - the balance is reduced</li>
+	<li>UnPay the Order - balance is increased</li>
+	<li>Reassign Order to a new customer - new customer balance increased, old balance decreased (for unpaid Orders)</li>
+	<li>Reassign a Line Item to a different Product - adjusts the order&#39;s amount total</li>
+	<li>Add a Line Item</li>
+	<li>Delete a Line Item</li>
+	<li>Change Line Item Quantity</li>
+	<li>Reassign Product to Line Item</li>
+	<li>Do <em>multiple</em> of these, in combination (&quot;no, 2 hammers, not 1 shovel&quot;)</li>
+</ul>
+
+<p>A conventional approach would require hundreds of lines of code, might easily miss corner cases, and be tedious to maintain.</p>
+
+<p>&nbsp;</p>

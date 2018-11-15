@@ -1,0 +1,40 @@
+{
+  "name": "lineitemsList",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "lineitems",
+  "join": "\"order_ident\" = [ident]",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "product_name",
+      "alias": "product_name",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "quantity_ordered",
+      "alias": "quantity_ordered",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "amount",
+      "alias": "amount",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "part_price",
+      "alias": "part_price",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

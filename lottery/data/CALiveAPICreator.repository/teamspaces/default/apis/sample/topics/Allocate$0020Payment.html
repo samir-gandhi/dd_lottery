@@ -1,0 +1,13 @@
+<p><a href="https://docops.ca.com/ca-live-api-creator/5-1/en/getting-started/reactive-logic-tutorial/explore-allocation-example" target="_blank">This</a> is a classic example of the providing an&nbsp;<a href="https://docops.ca.com/ca-live-api-creator/5-1/en/creating-apis/logic/rule-types/allocatefromto-system-method" target="_blank">allocation</a>&nbsp;re-usable service via Business Logic&nbsp;<a href="https://docops.ca.com/ca-live-api-creator/5-1/en/developing-apis/extensibility" target="_blank">Extensibility</a>. &nbsp;Here we add a Payment to a Customer, and its amount is allocated to that Customers&#39; outstanding unpaid orders.&nbsp;</p>
+
+<p>Please see the&nbsp;<a href="https://docops.ca.com/ca-live-api-creator/5-1/en/getting-started/api-project-samples/business-logic-api-project-sample" target="_blank">database structure</a>.</p>
+
+<ul>
+	<li>The&nbsp;<code>allocateFromTo</code>&nbsp;rule creates&nbsp;payment_order_allocation&nbsp;rows that represent the amount of the payment disbursed to each recipient Order. &nbsp;<br />
+	&nbsp;</li>
+	<li><code>payment_order_allocation</code>&nbsp;logic determines the exact amount allocated,&nbsp;<br />
+	&nbsp;</li>
+	<li>Which then increments the&nbsp;<code>orders.amount_paid</code>&nbsp;<br />
+	&nbsp;</li>
+	<li>Which in turn affects the&nbsp;orders.amount_un_paid, which adjusts the c<code>ustomers.balance</code>.</li>
+</ul>

@@ -1,0 +1,17 @@
+{
+  "name": "A. Lincoln",
+  "fullname": "Test user Alpha",
+  "email": "alpha@test.com",
+  "isActive": true,
+  "comments": null,
+  "keyLifetimeSeconds": null,
+  "passwordHash": "Zay+vZqNMIt5WqV+xqUR4XeKBvq09RCX5LcBP7st1bgzTWUrMpLI30ZlkUuLOleRvT9repN0NYjXYGghWd6JdQ==",
+  "passwordSalt": "6m8f804mgd5Lj6XeJrTeAUI+LdNUF9lLTghx22IS",
+  "roles": [
+    "Normal user"
+  ],
+  "globals": {
+    "deptNo": "US Sales",
+    "email": "alpha@test.com"
+  }
+}

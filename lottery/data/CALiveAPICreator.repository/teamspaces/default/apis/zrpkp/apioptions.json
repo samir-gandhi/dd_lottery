@@ -1,0 +1,12 @@
+{
+  "Permit Authorization parameter in URL": {
+    "dataType": "boolean",
+    "value": true,
+    "defaultValue": false
+  },
+  "Tech docs URL": {
+    "dataType": "string",
+    "value": "https://docops.ca.com/ca-live-api-creator/5-1/en/tutorials-and-samples/northwind-api-sample",
+    "defaultValue": null
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "parentEntity": "main:Charges",
+    "childEntity": "main:EventTalks",
+    "roleToParent": "Charges",
+    "roleToChild": "EventTalks_List",
+    "deleteRule": "Cascade",
+    "updateRule": "Cascade",
+    "parentColumns": [
+      "ident"
+    ],
+    "childColumns": [
+      "EventCosts_ident"
+    ]
+  },
+  {
+    "parentEntity": "main:MarketingPrograms",
+    "childEntity": "main:Charges",
+    "roleToParent": "MarketingProgram",
+    "roleToChild": "Charges_List",
+    "deleteRule": "No Action",
+    "updateRule": "No Action",
+    "parentColumns": [
+      "name"
+    ],
+    "childColumns": [
+      "MarketingProgramName"
+    ]
+  }
+]

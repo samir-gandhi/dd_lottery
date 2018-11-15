@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "fullname": "Demo user",
+  "email": "admin@ca.com",
+  "isActive": true,
+  "comments": null,
+  "keyLifetimeSeconds": null,
+  "passwordHash": "KP1Fx6ykw/CQlxNHwwTSwBNBcCrPVs+zocQYjqFbuYtopBHbmNTuCHhtx/4Y0Ztju5M78Yq93y57i1QTQHDXEw==",
+  "passwordSalt": "fBLKeaF9anVAymoe5ANyxrtCZNzyrovErzVCFnSw",
+  "roles": [
+    "API Owner"
+  ],
+  "globals": {
+  }
+}

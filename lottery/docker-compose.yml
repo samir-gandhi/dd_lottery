@@ -1,0 +1,88 @@
+version: '2'
+
+services:
+  lac:
+    image: sg-lac:5.1.00
+    ports: 
+      - 8081:8080
+    environment:
+      CATALINA_OPTS: "-javaagent:/home/dd-java-agent.jar -Ddd.service.name=lac -Ddd.agent.host=datadog-agent -Ddd.agent.port=8126 --add-modules java.xml.bind"
+
+    volumes:
+      - ./data/CALiveAPICreator.repository:/home/tomcat/CALiveAPICreator.repository
+      - ./data/databases:/usr/local/CALiveAPICreator/databases 
+    networks:
+      - demo
+  
+  api-gateway:
+    image: caapim/gateway
+#    cpus: 4
+#    mem_limit: 6g
+#    memswap_limit: 6g
+#    mem_swappiness: 0
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+      - "9443:9443"
+    volumes:
+      - /opt/SecureSpan/Gateway/node/default/etc/bootstrap/services/restman
+      - ./SSG_LICENSE.xml:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/license.xml
+      - ./data/gateway_db:/opt/SecureSpan/Gateway/node/default/var/db
+      - ./dd-java-agent.jar:/opt/SecureSpan/Gateway/node/default/etc/dd-java-agent.jar
+    environment:
+      ACCEPT_LICENSE: "true"
+      SSG_ADMIN_USERNAME: "admin"
+      SSG_ADMIN_PASSWORD: "CAdemo123"
+      EXTRA_JAVA_ARGS: "-XX:ParallelGCThreads=4 -javaagent:/opt/SecureSpan/Gateway/node/default/etc/dd-java-agent.jar -Ddd.service.name=gateway -Ddd.agent.host=datadog-agent -Ddd.agent.port=8126 -Dcom.l7tech.bootstrap.autoTrustSslKey=trustAnchor,TrustedFor.SSL,TrustedFor.SAML_ISSUER"
+      SSG_CLUSTER_HOST: "docker.apim.ca"
+      SSG_CLUSTER_PASSWORD: "7layer"
+      SSG_DATABASE_USER: "gateway"
+      SSG_DATABASE_PASSWORD: "7layer"
+      SSG_DATABASE_JDBC_URL: "jdbc:mysql://mysql-ssg:3306/ssg"
+    networks:
+      - demo  
+  
+  mysql-lac:
+    image: mysql:5.7
+    mem_limit: 512m
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: "true"
+      MYSQL_USER: "lac"
+      MYSQL_PASSWORD: "CAdemo123" 
+      MYSQL_DATABASE: "hotspot"
+    command:
+      - "--character-set-server=utf8"
+      - "--innodb_log_buffer_size=32M"
+      - "--innodb_log_file_size=80M"
+      - "--max_allowed_packet=8M"
+    volumes:
+      - ./data/mysql-hotspot/conf:/etc/mysql/conf.d
+      - ./data/mysql-hotspot/data:/var/lib/mysql
+    networks:
+      - demo  
+
+  mysql-ssg:
+    image: mysql:5.7
+    mem_limit: 512m
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: "true"
+      MYSQL_USER: "gateway"
+      MYSQL_PASSWORD: "7layer" 
+      MYSQL_DATABASE: "ssg"
+    command:
+      - "--character-set-server=utf8"
+      - "--innodb_log_buffer_size=32M"
+      - "--innodb_log_file_size=80M"
+      - "--max_allowed_packet=8M"
+    volumes:
+      - ./data/mysql-ssg/conf:/etc/mysql/conf.d
+      - ./data/mysql-ssg/data:/var/lib/mysql
+    networks:
+      - demo
+
+networks:
+  demo:
+    external: true
+

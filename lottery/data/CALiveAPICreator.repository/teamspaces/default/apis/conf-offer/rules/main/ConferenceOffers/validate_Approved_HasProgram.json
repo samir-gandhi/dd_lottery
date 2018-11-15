@@ -1,0 +1,16 @@
+{
+  "name": "validate_Approved_HasProgram",
+  "entity": "ConferenceOffers",
+  "isActive": true,
+  "ruleType": "validation",
+  "codeType": "JavaScript",
+  "errorMessage": "Sorry, you must assign to a Marketing Program before approving",
+  "problemAttributes": [
+  ],
+  "isAutoTitle": false,
+  "title": "Validation: Approval requires Marketing Program",
+  "comments": "This is an element of Data Integration, here, conditional referential integrity logic across multiple databases",
+  "topics": [
+    "3. Integration"
+  ]
+}

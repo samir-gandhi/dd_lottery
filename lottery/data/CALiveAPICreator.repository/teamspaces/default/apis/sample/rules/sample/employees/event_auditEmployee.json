@@ -1,0 +1,19 @@
+{
+  "name": "event_auditEmployee",
+  "entity": "employees",
+  "isActive": true,
+  "ruleType": "event",
+  "asynchronous": false,
+  "appliesTo": {
+    "insert": true,
+    "update": true,
+    "delete": true
+  },
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Audit Employee Changes",
+  "comments": "JavaScript example",
+  "topics": [
+    "Salary Audit"
+  ]
+}

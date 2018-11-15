@@ -1,0 +1,15 @@
+{
+  "name": "sortWithPOST",
+  "isActive": true,
+  "comments": "Simple function that takes a parameters and a JSON payload(array), it returns the sorted array.\nThis function is not associated with any tables or resources, so it must be called on the API, with a URL that looks like:\n.../v1/sortWithPOST?orderby='desc'\nand payload as:\n{\n\t\"fruits\": [\"Banana\", \"Orange\", \"Apple\", \"Mango\"]\n}",
+  "returnType": "{\n\t\"response\": [\"Mango\", \"Apple\", \"Orange\", \"Banana\"]\n}",
+  "extendedProperties": null,
+  "parameters": {
+    "orderby": {
+      "parameterType": "string",
+      "isRequired": true,
+      "comments": "orderby could be asc/desc"
+    }
+  },
+  "functionType": "apiLevel"
+}

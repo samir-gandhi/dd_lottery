@@ -1,0 +1,19 @@
+{
+  "name": "sum_balance",
+  "entity": "customers",
+  "isActive": true,
+  "ruleType": "sum",
+  "attribute": "balance",
+  "roleToChildren": "ordersList",
+  "childAttribute": "amount_un_paid",
+  "qualification": "is_ready = true",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "balance = sum(ordersList.amount_un_paid where is_ready = true)",
+  "comments": "Reacts to changes in referenced data (is_ready, amount_un_paid, etc), with a 1 row update (not a sql select sum)",
+  "topics": [
+    "Allocate Payment",
+    "ChkCredit",
+    "MakeReady"
+  ]
+}

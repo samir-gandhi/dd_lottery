@@ -1,0 +1,22 @@
+{
+  "name": "emp",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "employees",
+  "join": "\"name\" = [salesrep_name]",
+  "isCollection": false,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "base_salary",
+      "alias": "Salary",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "parentCopy_product_price",
+  "entity": "LineItem",
+  "isActive": true,
+  "ruleType": "parentCopy",
+  "attribute": "product_price",
+  "roleToParent": "product",
+  "parentAttribute": "price",
+  "isAutoTitle": true,
+  "title": "product_price = parentcopy(product.price)",
+  "comments": "Parent copy means order unaffected by product price changes",
+  "topics": [
+    "Check Credit"
+  ]
+}

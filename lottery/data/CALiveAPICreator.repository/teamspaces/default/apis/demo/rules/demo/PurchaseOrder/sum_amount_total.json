@@ -1,0 +1,17 @@
+{
+  "name": "sum_amount_total",
+  "entity": "PurchaseOrder",
+  "isActive": true,
+  "ruleType": "sum",
+  "attribute": "amount_total",
+  "roleToChildren": "LineItemList",
+  "childAttribute": "amount",
+  "qualification": null,
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "amount_total = sum(LineItemList.amount)",
+  "comments": "sum of line item amounts",
+  "topics": [
+    "Check Credit"
+  ]
+}

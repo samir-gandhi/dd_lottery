@@ -1,0 +1,16 @@
+{
+  "name": "formula_amount_un_paid",
+  "entity": "orders",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "amount_un_paid",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "amount_un_paid = return row.amount_total - row.amount_paid",
+  "comments": null,
+  "topics": [
+    "Allocate Payment",
+    "ChkCredit"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Orders_JS_Rest",
+  "description": "Make a REST call to another REST Endpoint (PurchaseOrders)t to create a compound document resource. Test this in the REST Lab",
+  "siblingRank": 100,
+  "resourceType": "JavaScript",
+  "isCollection": true,
+  "joinCondition": null
+}

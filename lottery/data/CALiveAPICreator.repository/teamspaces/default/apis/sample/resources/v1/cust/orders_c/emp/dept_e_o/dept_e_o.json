@@ -1,0 +1,28 @@
+{
+  "name": "dept_e_o",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "departments",
+  "join": "\"name\" = [department_name]",
+  "isCollection": false,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "budget",
+      "alias": "Budget",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "notes",
+      "alias": "Notes",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "OrderLookupParent",
+  "description": "PUT this object to see LOOKUP in action.\n{ \"@metadata\":  {\"action\":\"INSERT\"}, \"Customer\": { \"@metadata\": { \"action\":\"LOOKUP\",  \"key\":\"Name\"}, \"Name\":\"Alpha and Sons\"}, \"Items\":[ { \"Product\": { \"@metadata\": {\"action\":\"LOOKUP\", \"key\":\"ProductName\"}, \"ProductName\":\"Hammer\"}, \"Quantity\": 1} ]}",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "PurchaseOrder",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": true
+}

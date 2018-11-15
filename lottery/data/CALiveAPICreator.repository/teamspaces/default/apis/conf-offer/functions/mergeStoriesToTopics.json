@@ -1,0 +1,9 @@
+{
+  "name": "mergeStoriesToTopics",
+  "isActive": true,
+  "comments": "Pulls Agile User Stories to create Topics",
+  "returnType": "{\n  \"status\": 201\n}",
+  "extendedProperties": null,
+  "parameters": null,
+  "functionType": "apiLevel"
+}

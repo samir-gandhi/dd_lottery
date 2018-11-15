@@ -1,0 +1,16 @@
+{
+  "name": "validation_balance",
+  "entity": "customer",
+  "isActive": true,
+  "ruleType": "validation",
+  "codeType": "JavaScript",
+  "errorMessage": "Customer {name}'s balance: {balance|#,##0.00} exceeds their credit limit: {credit_limit|#,##0.00}",
+  "problemAttributes": [
+  ],
+  "isAutoTitle": true,
+  "title": "Validation: return row.balance <= row.credit_limit;",
+  "comments": "balance cannot exceed credit limit, else throw exception",
+  "topics": [
+    "Check Credit"
+  ]
+}

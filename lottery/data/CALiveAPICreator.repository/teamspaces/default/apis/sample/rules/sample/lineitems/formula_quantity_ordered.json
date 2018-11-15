@@ -1,0 +1,15 @@
+{
+  "name": "formula_quantity_ordered",
+  "entity": "lineitems",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "quantity_ordered",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": false,
+  "title": "quantity_ordered is entered, or computed from kit definition",
+  "comments": "from entry, or containing item",
+  "topics": [
+    "Kit Explosion"
+  ]
+}

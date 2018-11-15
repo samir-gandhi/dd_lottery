@@ -1,0 +1,27 @@
+<p><a href="https://docops.ca.com/ca-live-api-creator/5-1/en/getting-started/api-project-samples/business-logic-api-project-sample" target="_blank">When</a>&nbsp;the client inserts an&nbsp;<code>Order</code>&nbsp;and some&nbsp;<code>Lineitems</code>, the business logic must check that the&nbsp;<code>balance &lt; creditLimit</code>. &nbsp;This requires that we derive the Customer&#39;s&nbsp;<code>balance</code>&nbsp;from the Order.<code>amountUnPaid</code>, a rollup of the Lineitem&nbsp;<code>amounts</code>.</p>
+
+<p>These rules:</p>
+
+<ul>
+	<li>compute the Orders AmountTotal from the LineItems and Product for Ready Orders,</li>
+	<li>roll this into the Customer Balance,</li>
+	<li>and ensure the Balance does not exceed the Credit Limit</li>
+</ul>
+
+<p>This example illusrates that rules&nbsp;apply&nbsp;<em>automatically</em>&nbsp;to many Stories:</p>
+
+<ul>
+	<li>Delete Order - the balance is reduced</li>
+	<li>Pay Order - the balance is reduced</li>
+	<li>UnPay the Order - balance is increased</li>
+	<li>Make Order Ready - balance increased</li>
+	<li>Make Order Unready - balance reduced</li>
+	<li>Reassign Order to a new customer - new customer balance increased, old balance decreased (for unpaid Orders)</li>
+	<li>Reassign a Line Item to a different Product (see above)</li>
+	<li>Add a Line Item</li>
+	<li>Delete a Line Item</li>
+	<li>Change Line Item Quantity</li>
+	<li>Reassign Product to Line Item</li>
+</ul>
+
+<p>&nbsp;</p>

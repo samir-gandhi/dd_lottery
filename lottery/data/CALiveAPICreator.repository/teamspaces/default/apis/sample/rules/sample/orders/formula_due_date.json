@@ -1,0 +1,15 @@
+{
+  "name": "formula_due_date",
+  "entity": "orders",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "due_date",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": false,
+  "title": "due_date is placed_date + 1 month",
+  "comments": null,
+  "topics": [
+    "Order Processing"
+  ]
+}

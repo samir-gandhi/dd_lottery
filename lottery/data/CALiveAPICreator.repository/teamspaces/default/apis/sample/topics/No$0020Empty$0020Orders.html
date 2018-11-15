@@ -1,0 +1,11 @@
+<p><a href="https://docops.ca.com/ca-live-api-creator/5-1/en/getting-started/reactive-logic-tutorial/no-empty-orders-example" target="_blank">Since</a> it makes no business sense to place an order with no line items, we implement the noEmptyOrder requirement using the following logic.</p>
+
+<p>This example illustrates a number of <a href="https://docops.ca.com/ca-live-api-creator/5-1/en/creating-apis/logic/logic-patterns" target="_blank">Logic Patterns</a>:</p>
+
+<ol>
+	<li><strong>Counts as<a href="http://ca-doc.espressologic.com/docs/logic-designer/business-logic/logic-patterns#TOC-Counts-for-Existence-Checks" target="_blank"> </a>existence<a href="http://ca-doc.espressologic.com/docs/logic-designer/business-logic/logic-patterns#TOC-Counts-for-Existence-Checks" target="_blank"> </a>checks</strong>&nbsp;- the&nbsp;<code>itemCount</code>&nbsp;indicates whether the order has any items</li>
+	<li><strong>Commit time validations&nbsp;</strong>- the validation is executed&nbsp;<em>after</em>&nbsp;item logic has adjusted the&nbsp;itemCount</li>
+	<li><strong>Constrain derived result</strong></li>
+</ol>
+
+<p>The last item bears some note. &nbsp;As explained in&nbsp;<a href="https://docops.ca.com/ca-live-api-creator/5-1/en/creating-apis/logic/rule-types/validation-rule-type" target="_blank">Commit validations</a>, using a &quot;regular&quot; validation would have the effect that all orders are rejected. &nbsp;Not popular with the VP Sales. &nbsp;Since&nbsp;<em>Commit</em>&nbsp;Validations run after&nbsp;<em>all</em>&nbsp;the rows are processed, the&nbsp;<code>itemCount</code>&nbsp;will reflect the&nbsp;<code>Lineitems</code>&nbsp;(if any), so the logic will operate as intended.</p>

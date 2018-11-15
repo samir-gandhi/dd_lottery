@@ -1,0 +1,12 @@
+{
+  "Tech docs URL": {
+    "dataType": "string",
+    "value": "https://docops.ca.com/ca-live-api-creator/5-1/en/tutorials-and-samples/b2b-api-sample",
+    "defaultValue": null
+  },
+  "Type base URI": {
+    "dataType": "string",
+    "value": "urn:caliveapicreator:examples:pavlov:",
+    "defaultValue": "urn:caliveapicreator:"
+  }
+}

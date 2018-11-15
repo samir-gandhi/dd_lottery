@@ -1,0 +1,15 @@
+{
+  "name": "formula_auditDatetime",
+  "entity": "ConfOfferAudits",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "auditDatetime",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": false,
+  "title": "Audit PartnerPosts",
+  "comments": "See Resource PartnerPost.  Note Extended Properties, which trigger audit to PartnerPostAudit (a resource on this ConfOfferAudits).",
+  "topics": [
+    "1. Post"
+  ]
+}

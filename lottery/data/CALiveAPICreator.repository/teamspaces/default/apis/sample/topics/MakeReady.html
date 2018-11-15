@@ -1,0 +1,30 @@
+<p><a href="https://docops.ca.com/ca-live-api-creator/5-1/en/getting-started/reactive-logic-tutorial/make-order-ready-example" target="_blank">Placed</a> Orders are typically placed in a &quot;Shopping Cart&quot; state (<code>order.is_ready == false</code>), where they do not affect Customer balance and Product quantities until a subsequent&nbsp;Make Order Ready&nbsp;transaction is executed. &nbsp;So, we need to devise logic that, when an Order is &quot;made ready&quot;&nbsp;(PUT a purchase order, setting&nbsp;<code>order.is_ready ==&nbsp;<strong>true</strong></code>)...</p>
+
+<ol>
+	<li>increases the customer balances and&nbsp;<br />
+	&nbsp;</li>
+	<li>adjusts Product quantities, and if reorderQuantity is exceeded, set reorderRequired</li>
+</ol>
+
+<p>We solve this transaction by declaring the following logic:</p>
+
+<p>Since the Customer has a&nbsp;<a href="https://docops.ca.com/ca-live-api-creator/5-1/en/creating-apis/logic/rule-types/sum-rule-type" target="_blank">Sum</a>:</p>
+
+<pre>
+<code>Derive customers.balance as sum(ordersList.amount_un_paid) where is_ready = true</code>
+</pre>
+
+<p><br />
+The Balance is increased due to the&nbsp;Qualification Condition Change&nbsp;(<code>is_ready</code>) now being met.</p>
+
+<p>Similarly, we don&#39;t want to reduce&nbsp;<code>Product</code>&nbsp;inventory, and set reorder flags, until&nbsp;Purchaseorders&nbsp;are marked as ready. So, we need to define logic to make this happen.</p>
+
+<p>This is a bit more challenging, since the&nbsp;<code>Product</code>&nbsp;is not&nbsp;<em>directly</em>&nbsp;related to&nbsp;<code>Orders,&nbsp;</code>so that the qualification condition cannot reference&nbsp;<code>orders.is_ready.</code>&nbsp; So, we introduce&nbsp;<code>Lineitem.is_ready</code>, enabling us to define the following logic.</p>
+
+<p>Implementation Notes:</p>
+
+<ol>
+	<li>The LineItems.isReady&nbsp;Lineitems.is_ready&nbsp;<a href="https://docops.ca.com/ca-live-api-creator/5-1/en/creating-apis/logic/rule-types/formula-rule-type" target="_blank">Formula</a>&nbsp;is a Parent Reference, so changes are&nbsp;<a href="https://docops.ca.com/ca-live-api-creator/5-1/en/creating-apis/logic/logic-execution" target="_blank">Forward Chain altered Parent References to Children</a>&nbsp;to each Lineitem</li>
+	<li>That activates Lineitem logic, where the change to the Sums&#39; Qualification Condition&nbsp;adjusts the&nbsp;<code>Product.totalQtyOrdered</code></li>
+	<li>That activates Product Logic, which computes&nbsp;<code>products.is_reorder_required</code></li>
+</ol>

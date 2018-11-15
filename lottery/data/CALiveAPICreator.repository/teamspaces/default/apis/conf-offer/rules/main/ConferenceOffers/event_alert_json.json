@@ -1,0 +1,19 @@
+{
+  "name": "event_alert_json",
+  "entity": "ConferenceOffers",
+  "isActive": true,
+  "ruleType": "event",
+  "asynchronous": false,
+  "appliesTo": {
+    "insert": false,
+    "update": true,
+    "delete": false
+  },
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Alert Management - JSON Message",
+  "comments": "Microservices architecture recommends that systems be autonomous, with decreased dependence on other systems. This internal communication is by way of a message (rather than an API), so that the event system functions even while Management is down.\nThis event rule type uses an MQTT message;  the same approach would be used for other message brokers.",
+  "topics": [
+    "3. Integration"
+  ]
+}

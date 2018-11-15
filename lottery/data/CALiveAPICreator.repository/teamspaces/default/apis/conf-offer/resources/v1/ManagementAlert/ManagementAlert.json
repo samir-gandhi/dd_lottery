@@ -1,0 +1,39 @@
+{
+  "name": "ManagementAlert",
+  "description": "When managers set the approve flag on a Conference Offer, this resource provides mapping and transformation for the MQTT message for the Conf Management service.\n\nSee the Integration Rules (Alert Management - JSON Message).",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "main",
+  "entity": "ConferenceOffers",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "name",
+      "alias": "name",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "ExhibitsCost",
+      "alias": "ExhibitsCost",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "TalksCost",
+      "alias": "TalksCost",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "MarketingProgramName",
+      "alias": "MarketingProgramName",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

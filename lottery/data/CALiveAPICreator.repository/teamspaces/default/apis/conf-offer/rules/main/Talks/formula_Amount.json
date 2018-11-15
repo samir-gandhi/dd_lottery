@@ -1,0 +1,15 @@
+{
+  "name": "formula_Amount",
+  "entity": "Talks",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "Amount",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": false,
+  "title": "Amount = Cost * Quantity",
+  "comments": null,
+  "topics": [
+    "2. Logic"
+  ]
+}

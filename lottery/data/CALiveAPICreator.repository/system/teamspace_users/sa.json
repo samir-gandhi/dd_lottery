@@ -1,0 +1,12 @@
+{
+  "name": "sa",
+  "fullname": "System Admin",
+  "isActive": true,
+  "comments": null,
+  "keyLifetimeSeconds": null,
+  "passwordHash": "X/tnWvQgTPaXxRT0g7gPds+dwIuOTkM6ojBsT38JQjIB4L4lrsRsNQLvx5vhgwccRvYrjrEFApvX5deepWCj4A==",
+  "passwordSalt": "+dhEtpDApZ5O4aH0e9MeZA==",
+  "roles": [
+    "System administrator"
+  ]
+}

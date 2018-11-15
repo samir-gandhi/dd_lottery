@@ -1,0 +1,33 @@
+{
+  "name": "ComplianceReporting",
+  "description": "See Topic: Regulatory Compliance",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "customers",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "name",
+      "alias": "name",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "balance",
+      "alias": "balance",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "credit_limit",
+      "alias": "credit_limit",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

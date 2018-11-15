@@ -1,0 +1,14 @@
+{
+  "name": "Admin",
+  "authToken": "AdminKey",
+  "description": null,
+  "userIdentifier": null,
+  "isActive": true,
+  "expiration": null,
+  "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+  "roles": [
+    "System administrator"
+  ],
+  "globals": {
+  }
+}

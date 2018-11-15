@@ -1,0 +1,19 @@
+{
+  "name": "event_alert_api",
+  "entity": "ConferenceOffers",
+  "isActive": false,
+  "ruleType": "event",
+  "asynchronous": false,
+  "appliesTo": {
+    "insert": true,
+    "update": true,
+    "delete": true
+  },
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Alert Management - API",
+  "comments": "APIs are commonly used for integration.  Note, though, that when the target system is down, the post fails, and this transaction would be rolled back.,\nmaking this service less autonomous.  A more autonomous approach is shown in Alert Management - JSON Message",
+  "topics": [
+    "3. Integration"
+  ]
+}

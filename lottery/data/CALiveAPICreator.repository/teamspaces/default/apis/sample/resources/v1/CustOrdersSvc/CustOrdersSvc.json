@@ -1,0 +1,13 @@
+{
+  "name": "CustOrdersSvc",
+  "description": "API Mashup - local Customer, remote RESTful orders\n -- click the Subresource",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "customers",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": "\"name\" asc",
+  "useSchemaAttributes": true
+}

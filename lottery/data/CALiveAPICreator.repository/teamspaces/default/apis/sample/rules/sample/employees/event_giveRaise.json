@@ -1,0 +1,19 @@
+{
+  "name": "event_giveRaise",
+  "entity": "employees",
+  "isActive": true,
+  "ruleType": "event",
+  "asynchronous": false,
+  "appliesTo": {
+    "insert": true,
+    "update": true,
+    "delete": true
+  },
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Give Raise per URL arg",
+  "comments": null,
+  "topics": [
+    "Give Raise"
+  ]
+}

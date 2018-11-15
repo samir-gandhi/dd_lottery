@@ -1,0 +1,7 @@
+{
+  "name": "B2B Pavlov",
+  "urlFragment": "b2bderbypavlov",
+  "comments": "B2B Demo for Supplier Pavlov.  LAC v5",
+  "isEnabled": true,
+  "authProviderName": "Built-in authentication"
+}

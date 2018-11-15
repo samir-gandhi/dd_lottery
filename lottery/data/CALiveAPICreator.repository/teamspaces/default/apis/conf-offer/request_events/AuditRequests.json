@@ -1,0 +1,6 @@
+{
+  "name": "AuditRequests",
+  "eventType": "request",
+  "comments": "Extensible Declarative Logic: audits resource posts, per Extended Properties (so, works for any Resource you want to audit).\nYou might provide such functionality in a library, to facilitate sharing across projects.",
+  "isActive": true
+}

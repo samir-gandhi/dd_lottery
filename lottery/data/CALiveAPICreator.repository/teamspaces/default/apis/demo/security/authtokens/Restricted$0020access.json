@@ -1,0 +1,15 @@
+{
+  "name": "Restricted access",
+  "authToken": "demo_restricted",
+  "description": null,
+  "userIdentifier": null,
+  "isActive": true,
+  "expiration": null,
+  "logging": null,
+  "roles": [
+    "API User"
+  ],
+  "globals": {
+    "customerName": "Bravo Hardware"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Conferences Key",
+  "authToken": "ConferencesKey",
+  "description": null,
+  "userIdentifier": null,
+  "isActive": true,
+  "expiration": null,
+  "logging": "*=FINE",
+  "roles": [
+    "Event Organizer"
+  ],
+  "globals": {
+  }
+}

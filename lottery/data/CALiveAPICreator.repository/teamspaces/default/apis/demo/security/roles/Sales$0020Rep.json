@@ -1,0 +1,86 @@
+{
+  "name": "Sales Rep",
+  "description": "Preselects orders",
+  "defaultTablePermission": "N",
+  "defaultViewPermission": "N",
+  "defaultFunctionPermission": "N",
+  "globals": {
+    "current_employee_row": {
+      "name": "current_employee_row",
+      "description": null,
+      "isRequired": true,
+      "executionOrder": 1,
+      "codeType": "SQL",
+      "prefix": "demo",
+      "sqlFragment": "* from \"employee\" where \"login\" = '@{_apikey.user_identifier}'"
+    }
+  },
+  "apiVisibility": {
+    "table": {
+      "isRestricted": true,
+      "restrictedTo": [
+      ]
+    },
+    "view": {
+      "isRestricted": true,
+      "restrictedTo": [
+      ]
+    },
+    "resource": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "procedure": {
+      "isRestricted": true,
+      "restrictedTo": [
+      ]
+    },
+    "metatable": {
+      "isRestricted": false,
+      "restrictedTo": null
+    },
+    "function": {
+      "isRestricted": true,
+      "restrictedTo": [
+      ]
+    }
+  },
+  "entityPermission": {
+    "My Orders - no update of paid flag": {
+      "entity": "demo:PurchaseOrder",
+      "description": "Read, insert and delete my orders (see Globals tab), cannot update paid flag",
+      "accessLevels": [
+        "READ",
+        "INSERT",
+        "DELETE"
+      ],
+      "rowFilter": "\"salesrep_id\" = @{current_employee_row.employee_id}",
+      "columnFilter": {
+        "isRestricted": true,
+        "restrictedTo": [
+          "paid"
+        ]
+      }
+    },
+    "My Orders Write": {
+      "entity": "demo:PurchaseOrder",
+      "description": "read, insert and delete my orders (see Globals tab), any columns",
+      "accessLevels": [
+        "ALL"
+      ],
+      "rowFilter": "\"salesrep_id\" = @{current_employee_row.employee_id}",
+      "columnFilter": {
+        "isRestricted": true,
+        "restrictedTo": [
+          "order_number",
+          "amount_total",
+          "notes",
+          "customer_name",
+          "salesrep_id"
+        ]
+      }
+    }
+  },
+  "functionPermission": {
+  }
+}

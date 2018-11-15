@@ -1,0 +1,13 @@
+{
+  "name": "CustomerOrders_Declarative",
+  "description": "Returns Customers from demo, Orders from sample, using multiple Data Sources and a Virtual Foreign Key (see Schema page - child relationships for demo:customer).\nThe result is declarative - created using point and click (no code), with full services for filtering, pagination and update.\nCompare to manual approach - CustomerOders_JS_Totally (see Description).",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "customer",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": true
+}

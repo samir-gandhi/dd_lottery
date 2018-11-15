@@ -1,0 +1,12 @@
+{
+  "name": "Approve",
+  "isActive": true,
+  "comments": "If you've made all your elections, click Submit to finish and alert Management.",
+  "returnType": null,
+  "extendedProperties": null,
+  "parameters": null,
+  "functionType": "rowLevel",
+  "appliesTo": [
+    "main:ConferenceOffers"
+  ]
+}

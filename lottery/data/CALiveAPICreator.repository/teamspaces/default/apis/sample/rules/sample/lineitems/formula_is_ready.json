@@ -1,0 +1,15 @@
+{
+  "name": "formula_is_ready",
+  "entity": "lineitems",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "is_ready",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "is_ready = return row.itemOrder.is_ready",
+  "comments": "Propagate affects Product qualified aggregate",
+  "topics": [
+    "MakeReady"
+  ]
+}

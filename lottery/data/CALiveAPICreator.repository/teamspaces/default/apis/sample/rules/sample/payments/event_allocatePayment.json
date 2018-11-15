@@ -1,0 +1,19 @@
+{
+  "name": "event_allocatePayment",
+  "entity": "payments",
+  "isActive": true,
+  "ruleType": "event",
+  "asynchronous": false,
+  "appliesTo": {
+    "insert": true,
+    "update": true,
+    "delete": true
+  },
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Allocate Payments to outstanding orders",
+  "comments": "Creates allocation rows",
+  "topics": [
+    "Allocate Payment"
+  ]
+}

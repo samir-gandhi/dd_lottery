@@ -1,0 +1,10 @@
+{
+  "name": "LoadTestData",
+  "isActive": true,
+  "loggingLevel": "Warning",
+  "isSingleServer": true,
+  "description": null,
+  "connectionName": null,
+  "providerName": "Startup",
+  "parameters": null
+}

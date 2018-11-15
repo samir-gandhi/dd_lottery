@@ -1,0 +1,7 @@
+{
+  "name": "Conference Management",
+  "urlFragment": "conf-management",
+  "comments": "Accepts Approved Conference Offers; Enable Manage > Listeners > Connections; see Rules > Process Messages topic.\n\nNote: uses public broker, not allowed in some corporate networks).",
+  "isEnabled": true,
+  "authProviderName": "Built-in authentication"
+}

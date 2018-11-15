@@ -1,0 +1,21 @@
+{
+  "name": "product_detail",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "products",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "name",
+      "alias": "ProductName",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

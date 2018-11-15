@@ -1,0 +1,13 @@
+{
+  "name": "Hello World",
+  "isActive": true,
+  "description": null,
+  "requiresAuthentication": false,
+  "urlPattern": "helloWorld",
+  "appliesTo": {
+    "get": true,
+    "put": false,
+    "post": false,
+    "delete": false
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "default TeamSpace",
+  "urlFragment": "default",
+  "description": "This is the default TeamSpace. You can create additional TeamSpaces if you want to segregate users (or groups of users) into their own TeamSpace.",
+  "isActive": true
+}

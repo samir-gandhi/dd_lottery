@@ -1,0 +1,7 @@
+{
+  "name": "Conference  Offers",
+  "urlFragment": "conf-offer",
+  "comments": "See Learning Center > Example; Accept Conference Offers, Mark Options Used, Approve and Alert Conference Management.\nNote: uses a public broker, which may not be allowed in some corporate networks.",
+  "isEnabled": true,
+  "authProviderName": "Built-in authentication"
+}

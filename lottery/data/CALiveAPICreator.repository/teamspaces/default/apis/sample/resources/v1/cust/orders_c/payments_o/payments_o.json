@@ -1,0 +1,14 @@
+{
+  "name": "payments_o",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "payment_order_allocations",
+  "join": "\"order_ident\" = [ident]",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": true
+}

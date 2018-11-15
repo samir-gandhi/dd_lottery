@@ -1,0 +1,15 @@
+{
+  "name": "Sample3",
+  "authToken": "Sample3Key",
+  "description": null,
+  "userIdentifier": null,
+  "isActive": true,
+  "expiration": null,
+  "logging": null,
+  "roles": [
+    "Normal user"
+  ],
+  "globals": {
+    "maxAmount": "200"
+  }
+}

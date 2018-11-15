@@ -1,0 +1,5 @@
+{
+  "name": "Allocate Payment",
+  "color": "#c6fcb2",
+  "summary": "Story: Enter Payment. Task: Allocate Payment to outstanding orders, oldest first."
+}

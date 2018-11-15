@@ -1,0 +1,5 @@
+{
+  "name": "Check Credit",
+  "color": "#96f90d",
+  "summary": "Ensure the balance does not exceed the credit limit."
+}

@@ -1,0 +1,34 @@
+{
+  "name": "payments_c",
+  "description": null,
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "sample",
+  "entity": "payments",
+  "join": "\"customer_name\" = [name]",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": "\"placed_date\" asc",
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "amount",
+      "alias": "Amount",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "amount_un_disbursed",
+      "alias": "AmtUnDisbursed",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "ident",
+      "alias": "PaymentId",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

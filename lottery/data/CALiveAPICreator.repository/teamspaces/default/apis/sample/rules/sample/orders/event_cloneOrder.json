@@ -1,0 +1,19 @@
+{
+  "name": "event_cloneOrder",
+  "entity": "orders",
+  "isActive": true,
+  "ruleType": "event",
+  "asynchronous": false,
+  "appliesTo": {
+    "insert": true,
+    "update": true,
+    "delete": true
+  },
+  "codeType": "JavaScript",
+  "isAutoTitle": false,
+  "title": "Clone Order per URL arg.clone",
+  "comments": "JavaScript example",
+  "topics": [
+    "Clone Order"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Products",
+  "description": "Query for all products",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "product",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": false,
+  "attributes": [
+    {
+      "attribute": "name",
+      "alias": "name",
+      "description": null,
+      "isKey": false
+    },
+    {
+      "attribute": "price",
+      "alias": "price",
+      "description": null,
+      "isKey": false
+    }
+  ]
+}

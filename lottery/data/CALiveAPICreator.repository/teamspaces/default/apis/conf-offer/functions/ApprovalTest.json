@@ -1,0 +1,9 @@
+{
+  "name": "ApprovalTest",
+  "isActive": true,
+  "comments": "Alternative to UI, use Get on this to test Conf Offer and Conf Management.  Expect the response shown below.",
+  "returnType": "{\"statusCode\":201,\"message\":\"ok - ConfManagement Charges row added\"}",
+  "extendedProperties": null,
+  "parameters": null,
+  "functionType": "apiLevel"
+}

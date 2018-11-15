@@ -1,0 +1,15 @@
+{
+  "name": "formula_Amount",
+  "entity": "Exhibits",
+  "isActive": true,
+  "ruleType": "formula",
+  "attribute": "Amount",
+  "codeType": "JavaScript",
+  "isJIT": false,
+  "isAutoTitle": false,
+  "title": "Amount = Cost * Quantity",
+  "comments": "JavaScript provides if-null/else support - (row.Quantity || 1) returns 1 if the Quantity is null.",
+  "topics": [
+    "2. Logic"
+  ]
+}

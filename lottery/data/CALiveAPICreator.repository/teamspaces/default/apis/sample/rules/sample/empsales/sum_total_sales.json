@@ -1,0 +1,17 @@
+{
+  "name": "sum_total_sales",
+  "entity": "empsales",
+  "isActive": true,
+  "ruleType": "sum",
+  "attribute": "total_sales",
+  "roleToChildren": "ordersList",
+  "childAttribute": "amount_discounted",
+  "qualification": null,
+  "isJIT": false,
+  "isAutoTitle": true,
+  "title": "total_sales = sum(ordersList.amount_discounted)",
+  "comments": "Story: Place Order.  Task: GroupOrdersByRepMonth",
+  "topics": [
+    "Sales Tracking"
+  ]
+}

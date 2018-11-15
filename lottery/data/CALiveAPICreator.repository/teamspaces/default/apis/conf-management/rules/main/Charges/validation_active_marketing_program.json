@@ -1,0 +1,16 @@
+{
+  "name": "validation_active_marketing_program",
+  "entity": "Charges",
+  "isActive": true,
+  "ruleType": "validation",
+  "codeType": "JavaScript",
+  "errorMessage": "Sorry, changes must be assigned to a Marketing Program, and that program must be active",
+  "problemAttributes": [
+  ],
+  "isAutoTitle": false,
+  "title": "Active Marketing Program",
+  "comments": null,
+  "topics": [
+    "Error Handling"
+  ]
+}

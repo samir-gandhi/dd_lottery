@@ -1,0 +1,13 @@
+{
+  "name": "PurchaseOrders",
+  "description": "Query for all orders with line items",
+  "siblingRank": 100,
+  "resourceType": "TableBased",
+  "prefix": "demo",
+  "entity": "PurchaseOrder",
+  "isCollection": true,
+  "isCombined": false,
+  "filter": null,
+  "order": null,
+  "useSchemaAttributes": true
+}
