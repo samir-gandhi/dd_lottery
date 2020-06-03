@@ -1,6 +1,6 @@
 This is a demo to show the value of API Management integrated with monitoring from datadog. 
 
-Peices included: 
+Pieces included: 
 1. API Gateway
 2. Live API Creator
 3. Datadog Infrastructure Monitoring
