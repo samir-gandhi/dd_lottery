@@ -5,15 +5,15 @@ Pieces included:
 2. Live API Creator
 3. Datadog Infrastructure Monitoring
 
-###API Gateway
+### API Gateway
 
 The API gateway is the edge resource that all incoming traffic goes through. 
 
-###Live API Creator 
+### Live API Creator 
 
 Live API Creator the API Server that interacts with a MySQL db. 
 
-###Datadog
+### Datadog
 
 Datadog is a monitoring solution that is used to witness performance gains. 
 
